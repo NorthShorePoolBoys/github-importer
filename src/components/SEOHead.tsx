@@ -15,6 +15,7 @@ const SEOHead = ({
   canonical,
   ogImage = "https://www.northshorepoolboys.com/og-image.png",
   jsonLd,
+  noIndex = false,
 }: SEOHeadProps) => {
   const jsonLdScripts = jsonLd
     ? Array.isArray(jsonLd)
