@@ -31,7 +31,7 @@ const faqItems = [
   { q: "What pool services do you offer in Peabody, MA?", a: "Weekly maintenance, pool openings and closings, water chemistry, pump and equipment repair, liner installation, leak detection, above-ground pool builds, and full hot tub service — for both residential and commercial properties." },
   { q: "What areas do you serve on the North Shore?", a: "We're based in Peabody, MA and serve 16 towns across Essex County and the North Shore: Danvers, Middleton, Beverly, Salem, Saugus, Lynnfield, Marblehead, Swampscott, Lynn, Wakefield, Reading, North Reading, Topsfield, Wenham, and Hamilton." },
   { q: "Are you CPO certified and insured?", a: "Yes. Our team holds Certified Pool Operator (CPO) certification and is fully insured for residential and commercial work." },
-  { q: "How do I schedule pool service?", a: "Call (978) 882-5932 or use the<>();— we respond within 48 hours — phone calls are fastest." },
+  { q: "How do I schedule pool service?", a: "Call (978) 882-5932 or use the contact form — we respond within 48 hours — phone calls are fastest." },
   { q: "Do you offer hot tub maintenance?", a: "Yes — routine visits, drain and fill, cleanouts, chemical testing, winterization, and hands-on owner education." },
   { q: "What does weekly maintenance include?", a: "Full vacuuming, skimmer emptying, waterline skimming, complete chemical testing and balancing, and filter check with cleaning as needed." },
 ];
