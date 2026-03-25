@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.northshorepoolboys.com/sitemap.xml
+
+Disallow: /thank-you.html
