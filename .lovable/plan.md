@@ -1,107 +1,69 @@
 
 
-# Rounds 6-8: Convert All Remaining Pages to React
+# Fix: Add Missing Routes and Clean URL Support
 
-## Summary
-35 remaining pages to convert: 21 town/location pages, 12 blog posts, plus 2 standalone pages (thank-you, pool-service-cost-massachusetts).
+## Problem
+Three categories of broken navigation:
 
-## Architecture: Data-Driven Town Pages
+1. **Clean URLs don't work** (`/liners`, `/pool-maintenance`, `/about`, etc.) — the `_redirects` file is Netlify-only and doesn't apply in the Lovable preview or any non-Netlify host. React Router only has `.html` routes registered.
 
-The 21 town pages follow an **identical structure** with only these differences per town:
-- Town name, zip code, neighborhoods
-- Hero subtitle text
-- Content block paragraphs (local intro, why choose us)
-- Nearby town links (3-4 towns)
-- Image alt text
-- SEO meta/JSON-LD schemas
+2. **7 non-blog-prefixed HTML pages have no route** — these are alternate URLs (without the `blog-` prefix) that should redirect to the blog versions:
+   - `green-pool-water-fix.html`
+   - `when-to-open-pool-massachusetts.html`
+   - `pool-maintenance-checklist.html`
+   - `best-pool-service-2025-businessrate-award.html`
+   - `best-pool-service-2026-businessrate-benchmark-award.html`
+   - `best-pool-cleaning-service-massachusetts-2025-2026.html`
+   - `best-pool-service-southern-new-england-2026.html`
 
-**Approach**: Create a single `src/pages/TownPage.tsx` component that takes a `townSlug` prop, then define a `townData` config object with all 21 towns' unique content. This avoids 21 nearly-identical 300-line files.
+3. **`_redirects` is incomplete** — missing clean URL entries for ~15 pages.
 
-### Town Pages (21)
-Peabody, Danvers, Middleton, Beverly, Salem, Saugus, Lynnfield, Marblehead, Swampscott, Lynn, Wakefield, Reading, North Reading, Topsfield, Wenham, Hamilton, Nahant, Georgetown, Boxford, Essex, Ipswich
+## Fix (single file: `src/App.tsx`)
 
-### Town Page Sections (identical layout)
-1. `page-hero` with town-specific title/subtitle
-2. Content block with image — local intro
-3. 6 service cards grid (same services, town-specific descriptions)
-4. Reversed content block — "Why choose us" with nearby town links
-5. 3 blog tip cards
-6. CTA band
-7. Nearby service areas pills (varies per town)
-8. ContactForm with `id="contact"`
+Add **duplicate routes without `.html`** for every page, so both `/liner.html` and `/liner` work. Also add redirect routes for the 7 non-blog-prefixed pages using `Navigate`.
 
-## Blog Posts (12)
+### Changes
 
-Each blog post is an article page with:
-- `page-hero` (label + h1 + intro)
-- Article body (`max-width: 760px`) with h2 sections, styled paragraphs, internal links, callout boxes
-- Some have numbered step lists, comparison tables, or tip boxes
-- JSON-LD: Article + FAQPage + BreadcrumbList + LocalBusiness
-
-| # | File | Source HTML |
-|---|------|------------|
-| 1 | `BlogGreenPoolWaterFix.tsx` | blog-green-pool-water-fix.html |
-| 2 | `BlogWhenToOpenPool.tsx` | blog-when-to-open-pool-massachusetts.html |
-| 3 | `BlogPoolMaintenanceChecklist.tsx` | blog-pool-maintenance-checklist.html |
-| 4 | `BlogPoolClosingChecklist.tsx` | blog-pool-closing-checklist-massachusetts.html |
-| 5 | `BlogPoolMaintenanceCost.tsx` | blog-pool-maintenance-cost-massachusetts.html |
-| 6 | `BlogSignsPoolPumpRepair.tsx` | blog-signs-pool-pump-needs-repair.html |
-| 7 | `BlogHowToTellPoolLeak.tsx` | blog-how-to-tell-if-pool-has-leak.html |
-| 8 | `BlogHowToWinterizeHotTub.tsx` | blog-how-to-winterize-hot-tub.html |
-| 9 | `BlogIsSaltwaterPoolWorthIt.tsx` | blog-is-saltwater-pool-worth-it.html |
-| 10 | `BlogVinylLinerVsFiberglass.tsx` | blog-vinyl-liner-vs-fiberglass-pool.html |
-| 11 | `BlogAboveGroundBuyingGuide.tsx` | blog-above-ground-pool-buying-guide.html |
-| 12 | `BlogBestPoolService2025.tsx` | blog-best-pool-service-2025-businessrate-award.html |
-| 13 | `BlogBestPoolService2026.tsx` | blog-best-pool-service-2026-businessrate-benchmark-award.html |
-| 14 | `BlogBestPoolCleaningMA.tsx` | blog-best-pool-cleaning-service-massachusetts-2025-2026.html |
-| 15 | `BlogBestPoolServiceSNE2026.tsx` | blog-best-pool-service-southern-new-england-2026.html |
-
-## Standalone Pages (2)
-
-| File | Source HTML |
-|------|------------|
-| `ThankYou.tsx` | thank-you.html — confirmation page with 3-step "what happens next", CTA, service links |
-| `PoolServiceCost.tsx` | pool-service-cost-massachusetts.html — pricing guide page |
-
-## Files to Create
-- `src/data/townData.ts` — Config object for all 21 towns (name, slug, zip, neighborhoods, intro text, nearby towns, SEO schemas)
-- `src/pages/TownPage.tsx` — Single data-driven component for all town pages
-- 15 blog post pages in `src/pages/blog/`
-- `src/pages/ThankYou.tsx`
-- `src/pages/PoolServiceCost.tsx`
-
-## Files to Modify
-- `src/App.tsx` — Add ~38 new routes (21 town + 15 blog + 2 standalone)
-- `_redirects` — Add any missing redirect rules for new routes
-
-## Route Registration
-
-```text
-# 21 Town routes (all use TownPage with different slugs)
-/pool-service-peabody-ma.html → <TownPage slug="peabody" />
-/pool-service-danvers-ma.html → <TownPage slug="danvers" />
-... (19 more)
-
-# 15 Blog routes
-/blog-green-pool-water-fix.html → BlogGreenPoolWaterFix
-/blog-when-to-open-pool-massachusetts.html → BlogWhenToOpenPool
-... (13 more)
-
-# 2 Standalone
-/thank-you.html → ThankYou
-/pool-service-cost-massachusetts.html → PoolServiceCost
+**Add clean URL routes** — for every existing `.html` route, add a matching route without the extension. Example:
+```tsx
+<Route path="/liner.html" element={<LinerInstallation />} />
+<Route path="/liner" element={<LinerInstallation />} />
 ```
 
-## Implementation Pattern
-Same as Rounds 1-5:
-- Wrap in `<Layout>`, `<SEOHead>` with JSON-LD from each HTML `<head>`
-- FAQ accordion via `useState` + `toggleFaq`
-- Internal links via `<Link to="...">`
-- Reuse `<ServiceAreaLinks>`, `<ContactForm>`
+This covers all ~30 service/info pages, all 21 town pages, all 15 blog posts, and the 2 standalone pages.
 
-## Execution Order
-Due to size, this will be implemented in sub-batches:
-1. **First**: `townData.ts` + `TownPage.tsx` + 21 town routes (biggest win — eliminates 21 files with one component)
-2. **Second**: All 15 blog posts + routes
-3. **Third**: ThankYou + PoolServiceCost + final routes + cleanup
+**Add redirect routes for non-blog-prefixed pages** using React Router's `Navigate`:
+```tsx
+<Route path="/green-pool-water-fix.html" element={<Navigate to="/blog-green-pool-water-fix.html" replace />} />
+<Route path="/when-to-open-pool-massachusetts.html" element={<Navigate to="/blog-when-to-open-pool-massachusetts.html" replace />} />
+<Route path="/pool-maintenance-checklist.html" element={<Navigate to="/blog-pool-maintenance-checklist.html" replace />} />
+<Route path="/best-pool-service-2025-businessrate-award.html" element={<Navigate to="/blog-best-pool-service-2025-businessrate-award.html" replace />} />
+<Route path="/best-pool-service-2026-businessrate-benchmark-award.html" element={<Navigate to="/blog-best-pool-service-2026-businessrate-benchmark-award.html" replace />} />
+<Route path="/best-pool-cleaning-service-massachusetts-2025-2026.html" element={<Navigate to="/blog-best-pool-cleaning-service-massachusetts-2025-2026.html" replace />} />
+<Route path="/best-pool-service-southern-new-england-2026.html" element={<Navigate to="/blog-best-pool-service-southern-new-england-2026.html" replace />} />
+```
+
+**Update `_redirects`** — add missing clean URL entries for completeness on Netlify.
+
+### Implementation approach
+
+Rather than duplicating every Route line, use a helper pattern:
+```tsx
+// Helper: register both /path.html and /path
+const DualRoute = ({ path, element }) => (
+  <>
+    <Route path={`${path}.html`} element={element} />
+    <Route path={path} element={element} />
+  </>
+);
+```
+
+Or simply list all routes with both variants in the Routes block.
+
+## Files to modify
+1. `src/App.tsx` — Add ~50 clean URL routes + 7 redirect routes
+2. `_redirects` — Add missing entries for complete Netlify coverage
+
+## No content changes
+All page components, town data, and blog posts are correctly built. This is purely a routing fix.
 
