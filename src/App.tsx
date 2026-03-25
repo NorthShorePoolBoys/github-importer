@@ -28,6 +28,10 @@ import SkimmerRepair from "./pages/SkimmerRepair.tsx";
 import LeakDetection from "./pages/LeakDetection.tsx";
 import ResidentialLeakDetection from "./pages/ResidentialLeakDetection.tsx";
 import TrenchlessPipeRepair from "./pages/TrenchlessPipeRepair.tsx";
+import About from "./pages/About.tsx";
+import Contact from "./pages/Contact.tsx";
+import Locations from "./pages/Locations.tsx";
+import Blog from "./pages/Blog.tsx";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +66,10 @@ const App = () => (
             <Route path="/leak-detection.html" element={<LeakDetection />} />
             <Route path="/residential-leak-detection.html" element={<ResidentialLeakDetection />} />
             <Route path="/trenchless-pipe-repair.html" element={<TrenchlessPipeRepair />} />
+            <Route path="/about.html" element={<About />} />
+            <Route path="/contact.html" element={<Contact />} />
+            <Route path="/locations.html" element={<Locations />} />
+            <Route path="/blog.html" element={<Blog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

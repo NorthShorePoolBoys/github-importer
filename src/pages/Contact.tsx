@@ -137,7 +137,7 @@ const Contact = () => {
       </section>
 
       {/* SERVICE AREAS */}
-      <ServiceAreaLinks serviceName="contact" />
+      <ServiceAreaLinks />
     </Layout>
   );
 };
