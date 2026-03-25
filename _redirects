@@ -18,6 +18,17 @@
 /locations           /locations.html            200
 /blog                /blog.html                 200
 /thank-you           /thank-you.html            200
+/salt-water-pool-service  /salt-water-pool-service.html  200
+/above-ground-pool-installation  /above-ground-pool-installation.html  200
+/safety-covers       /safety-covers.html        200
+/filter-repair       /filter-repair.html        200
+/liner-repair        /liner-repair.html         200
+/skimmer-repair      /skimmer-repair.html       200
+/residential-leak-detection  /residential-leak-detection.html  200
+/trenchless-pipe-repair  /trenchless-pipe-repair.html  200
+/pool-service-cost-massachusetts  /pool-service-cost-massachusetts.html  200
+
+# Town pages
 /pool-service-peabody-ma      /pool-service-peabody-ma.html      200
 /pool-service-danvers-ma      /pool-service-danvers-ma.html      200
 /pool-service-middleton-ma    /pool-service-middleton-ma.html    200
@@ -34,42 +45,45 @@
 /pool-service-topsfield-ma    /pool-service-topsfield-ma.html    200
 /pool-service-wenham-ma       /pool-service-wenham-ma.html       200
 /pool-service-hamilton-ma     /pool-service-hamilton-ma.html      200
-/blog/when-to-open-pool-massachusetts         /blog-when-to-open-pool-massachusetts.html         200
-/blog/green-pool-water-fix                     /blog-green-pool-water-fix.html                     200
-/blog/pool-maintenance-checklist               /blog-pool-maintenance-checklist.html               200
-/blog/best-pool-service-southern-new-england-2026  /blog-best-pool-service-southern-new-england-2026.html  200
-/blog/best-pool-cleaning-service-massachusetts-2025-2026  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  200
+/pool-service-nahant-ma       /pool-service-nahant-ma.html       200
+/pool-service-georgetown-ma   /pool-service-georgetown-ma.html   200
+/pool-service-boxford-ma      /pool-service-boxford-ma.html      200
+/pool-service-essex-ma        /pool-service-essex-ma.html        200
+/pool-service-ipswich-ma      /pool-service-ipswich-ma.html      200
 
-/trenchless-pipe-repair  /trenchless-pipe-repair.html  200
-
-/blog/best-pool-service-2025-businessrate-award  /blog-best-pool-service-2025-businessrate-award.html  200
-/blog/best-pool-service-2026-businessrate-benchmark-award  /blog-best-pool-service-2026-businessrate-benchmark-award.html  200
-
-/blog-best-pool-cleaning-service-massachusetts-2025-2026  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  200
-/blog/best-pool-cleaning-service-massachusetts-2025-2026  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  301
-/blog/best-pool-cleaning-service-massachusetts-2025-2026.html  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  301
-/blog-best-pool-service-2025-businessrate-award  /blog-best-pool-service-2025-businessrate-award.html  200
-/blog/best-pool-service-2025-businessrate-award  /blog-best-pool-service-2025-businessrate-award.html  301
-/blog/best-pool-service-2025-businessrate-award.html  /blog-best-pool-service-2025-businessrate-award.html  301
-/blog-best-pool-service-2026-businessrate-benchmark-award  /blog-best-pool-service-2026-businessrate-benchmark-award.html  200
-/blog/best-pool-service-2026-businessrate-benchmark-award  /blog-best-pool-service-2026-businessrate-benchmark-award.html  301
-/blog/best-pool-service-2026-businessrate-benchmark-award.html  /blog-best-pool-service-2026-businessrate-benchmark-award.html  301
-/blog-best-pool-service-southern-new-england-2026  /blog-best-pool-service-southern-new-england-2026.html  200
-/blog/best-pool-service-southern-new-england-2026  /blog-best-pool-service-southern-new-england-2026.html  301
-/blog/best-pool-service-southern-new-england-2026.html  /blog-best-pool-service-southern-new-england-2026.html  301
-/blog-green-pool-water-fix  /blog-green-pool-water-fix.html  200
-/blog/green-pool-water-fix  /blog-green-pool-water-fix.html  301
-/blog/green-pool-water-fix.html  /blog-green-pool-water-fix.html  301
-/blog-pool-maintenance-checklist  /blog-pool-maintenance-checklist.html  200
-/blog/pool-maintenance-checklist  /blog-pool-maintenance-checklist.html  301
-/blog/pool-maintenance-checklist.html  /blog-pool-maintenance-checklist.html  301
+# Blog posts - clean URLs
+/blog-green-pool-water-fix    /blog-green-pool-water-fix.html    200
 /blog-when-to-open-pool-massachusetts  /blog-when-to-open-pool-massachusetts.html  200
-/blog/when-to-open-pool-massachusetts  /blog-when-to-open-pool-massachusetts.html  301
-/blog/when-to-open-pool-massachusetts.html  /blog-when-to-open-pool-massachusetts.html  301
+/blog-pool-maintenance-checklist  /blog-pool-maintenance-checklist.html  200
+/blog-pool-closing-checklist-massachusetts  /blog-pool-closing-checklist-massachusetts.html  200
+/blog-pool-maintenance-cost-massachusetts  /blog-pool-maintenance-cost-massachusetts.html  200
+/blog-signs-pool-pump-needs-repair  /blog-signs-pool-pump-needs-repair.html  200
+/blog-how-to-tell-if-pool-has-leak  /blog-how-to-tell-if-pool-has-leak.html  200
+/blog-how-to-winterize-hot-tub  /blog-how-to-winterize-hot-tub.html  200
+/blog-is-saltwater-pool-worth-it  /blog-is-saltwater-pool-worth-it.html  200
+/blog-vinyl-liner-vs-fiberglass-pool  /blog-vinyl-liner-vs-fiberglass-pool.html  200
+/blog-above-ground-pool-buying-guide  /blog-above-ground-pool-buying-guide.html  200
+/blog-best-pool-service-2025-businessrate-award  /blog-best-pool-service-2025-businessrate-award.html  200
+/blog-best-pool-service-2026-businessrate-benchmark-award  /blog-best-pool-service-2026-businessrate-benchmark-award.html  200
+/blog-best-pool-cleaning-service-massachusetts-2025-2026  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  200
 
-/filter-repair  /filter-repair.html  200
-/liner-repair  /liner-repair.html  200
-/skimmer-repair  /skimmer-repair.html  200
+# Blog sub-path redirects
+/blog/when-to-open-pool-massachusetts  /blog-when-to-open-pool-massachusetts.html  301
+/blog/green-pool-water-fix  /blog-green-pool-water-fix.html  301
+/blog/pool-maintenance-checklist  /blog-pool-maintenance-checklist.html  301
+/blog/best-pool-service-southern-new-england-2026  /blog-best-pool-service-southern-new-england-2026.html  301
+/blog/best-pool-cleaning-service-massachusetts-2025-2026  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  301
+/blog/best-pool-service-2025-businessrate-award  /blog-best-pool-service-2025-businessrate-award.html  301
+/blog/best-pool-service-2026-businessrate-benchmark-award  /blog-best-pool-service-2026-businessrate-benchmark-award.html  301
+
+# Legacy non-blog-prefixed redirects
+/green-pool-water-fix.html  /blog-green-pool-water-fix.html  301
+/when-to-open-pool-massachusetts.html  /blog-when-to-open-pool-massachusetts.html  301
+/pool-maintenance-checklist.html  /blog-pool-maintenance-checklist.html  301
+/best-pool-service-2025-businessrate-award.html  /blog-best-pool-service-2025-businessrate-award.html  301
+/best-pool-service-2026-businessrate-benchmark-award.html  /blog-best-pool-service-2026-businessrate-benchmark-award.html  301
+/best-pool-cleaning-service-massachusetts-2025-2026.html  /blog-best-pool-cleaning-service-massachusetts-2025-2026.html  301
+/best-pool-service-southern-new-england-2026.html  /blog-best-pool-service-southern-new-england-2026.html  301
 
 # Old Squarespace redirects
 /service/recurring-services  /pool-maintenance.html  301
