@@ -8,6 +8,7 @@ const ThankYou = () => (
       title="Quote Request Received | North Shore Pool Boys"
       description="Your quote request has been received. North Shore Pool Boys will respond within 48 hours. Call (978) 882-5932 for immediate assistance."
       canonical="https://www.northshorepoolboys.com/thank-you.html"
+      noIndex={true}
     />
 
     <section className="page-hero" style={{ padding: "80px 0 40px" }}>
