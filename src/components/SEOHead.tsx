@@ -6,6 +6,7 @@ interface SEOHeadProps {
   canonical: string;
   ogImage?: string;
   jsonLd?: object | object[];
+  noIndex?: boolean;
 }
 
 const SEOHead = ({
@@ -14,6 +15,7 @@ const SEOHead = ({
   canonical,
   ogImage = "https://www.northshorepoolboys.com/og-image.png",
   jsonLd,
+  noIndex = false,
 }: SEOHeadProps) => {
   const jsonLdScripts = jsonLd
     ? Array.isArray(jsonLd)
@@ -25,7 +27,7 @@ const SEOHead = ({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
       <link rel="canonical" href={canonical} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
