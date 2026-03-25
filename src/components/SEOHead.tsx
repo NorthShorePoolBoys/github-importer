@@ -6,6 +6,7 @@ interface SEOHeadProps {
   canonical: string;
   ogImage?: string;
   jsonLd?: object | object[];
+  noIndex?: boolean;
 }
 
 const SEOHead = ({
