@@ -20,6 +20,14 @@ import PumpInstallation from "./pages/PumpInstallation.tsx";
 import FilterInstallation from "./pages/FilterInstallation.tsx";
 import HeaterInstallation from "./pages/HeaterInstallation.tsx";
 import SafetyCovers from "./pages/SafetyCovers.tsx";
+import PoolPumpRepair from "./pages/PoolPumpRepair.tsx";
+import HeaterRepair from "./pages/HeaterRepair.tsx";
+import FilterRepair from "./pages/FilterRepair.tsx";
+import LinerRepair from "./pages/LinerRepair.tsx";
+import SkimmerRepair from "./pages/SkimmerRepair.tsx";
+import LeakDetection from "./pages/LeakDetection.tsx";
+import ResidentialLeakDetection from "./pages/ResidentialLeakDetection.tsx";
+import TrenchlessPipeRepair from "./pages/TrenchlessPipeRepair.tsx";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +54,14 @@ const App = () => (
             <Route path="/filter.html" element={<FilterInstallation />} />
             <Route path="/heater-installation.html" element={<HeaterInstallation />} />
             <Route path="/safety-covers.html" element={<SafetyCovers />} />
+            <Route path="/pool-pump-repair.html" element={<PoolPumpRepair />} />
+            <Route path="/heater-repair.html" element={<HeaterRepair />} />
+            <Route path="/filter-repair.html" element={<FilterRepair />} />
+            <Route path="/liner-repair.html" element={<LinerRepair />} />
+            <Route path="/skimmer-repair.html" element={<SkimmerRepair />} />
+            <Route path="/leak-detection.html" element={<LeakDetection />} />
+            <Route path="/residential-leak-detection.html" element={<ResidentialLeakDetection />} />
+            <Route path="/trenchless-pipe-repair.html" element={<TrenchlessPipeRepair />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
