@@ -1,69 +1,55 @@
 
 
-# Plan: Convert All Static HTML Pages to React
+# Round 2: Convert Core Service Pages to React
 
-## Overview
-Your project has ~60 static HTML files that all share identical navigation, topbar, footer, and floating CTA. The unique content is the middle sections of each page. We'll extract shared elements into reusable React components and create a route for every page.
+## Pages to Create (7 total)
+1. `src/pages/PoolMaintenance.tsx` — pool-maintenance.html
+2. `src/pages/PoolOpenings.tsx` — pool-openings.html
+3. `src/pages/PoolClosings.tsx` — pool-closings.html
+4. `src/pages/PoolRepair.tsx` — pool-repair.html
+5. `src/pages/PoolChemistry.tsx` — pool-chemistry.html
+6. `src/pages/SaltWaterPoolService.tsx` — salt-water-pool-service.html
+7. `src/pages/AboveGroundPoolInstallation.tsx` — above-ground-pool-installation.html
 
-## Important Consideration
-This is a very large conversion (60+ pages). Due to the size, it will need to be done in **multiple rounds** — roughly 5-8 pages per round. I'll prioritize the most important pages first.
+## Shared Components to Extract
+Two patterns repeat across all pages and should be extracted into reusable components:
 
-## Architecture
+- **`src/components/ServiceAreaLinks.tsx`** — The "We provide this service across the North Shore" section with 7 town link pills (Peabody, Danvers, Middleton, Beverly, Salem, Saugus, Lynnfield). Identical on every page.
 
-```text
-src/
-├── components/
-│   ├── Layout.tsx          ← Topbar + Nav + MobileMenu + Footer + FloatingCTA
-│   ├── TopBar.tsx
-│   ├── Navigation.tsx      ← Desktop nav with dropdowns
-│   ├── MobileMenu.tsx      ← Accordion mobile nav
-│   ├── Footer.tsx
-│   ├── FloatingPhone.tsx
-│   ├── FinalCTA.tsx        ← Shared "Your pool deserves..." section
-│   ├── PageHero.tsx        ← Reusable hero section
-│   └── SEOHead.tsx         ← Helmet wrapper for meta/structured data
-├── pages/
-│   ├── Index.tsx           ← Homepage
-│   ├── About.tsx
-│   ├── Contact.tsx
-│   ├── Blog.tsx
-│   ├── Locations.tsx
-│   ├── PoolMaintenance.tsx
-│   ├── PoolOpenings.tsx
-│   ├── PoolClosings.tsx
-│   ├── ... (all service pages)
-│   ├── locations/
-│   │   ├── Peabody.tsx
-│   │   ├── Danvers.tsx
-│   │   └── ... (21 location pages)
-│   └── blog/
-│       ├── GreenPoolWaterFix.tsx
-│       └── ... (blog posts)
-├── App.tsx                 ← All routes defined
-└── styles.css              ← Keep existing CSS as-is
+- **`src/components/ContactForm.tsx`** — The contact form + info sidebar (appears on saltwater and above-ground pages, and will repeat on future pages). Netlify form with name, phone, email, service, town, message fields.
+
+## Per-Page Structure
+Each page follows the same pattern established in Round 1:
+- Wrapped in `<Layout>` component (provides topbar, nav, mobile menu, footer, floating CTA)
+- `<SEOHead>` with title, description, canonical URL, and JSON-LD schemas (LocalBusiness, Service, FAQPage, BreadcrumbList)
+- Unique body content converted from HTML to JSX (sections between nav and footer)
+- FAQ sections use React state for accordion toggle (same pattern as Index.tsx)
+- All internal links use `<Link to="...">` from react-router-dom
+
+## Route Registration
+Add all 7 routes to `App.tsx`:
+```
+/pool-maintenance.html
+/pool-openings.html
+/pool-closings.html
+/pool-repair.html
+/pool-chemistry.html
+/salt-water-pool-service.html
+/above-ground-pool-installation.html
 ```
 
-## Approach
-1. **Keep your existing `styles.css` as-is** — no rewrite to Tailwind. The CSS is well-structured and working. We'll import it globally.
-2. **Use `react-helmet-async`** for per-page SEO meta tags, structured data (JSON-LD), and canonical URLs.
-3. **Shared Layout component** wraps every page with topbar, nav, footer, and floating CTA.
-4. **Each HTML file becomes a React component** containing only the unique body content (everything between nav and footer).
-5. **React Router routes** map to the same URL paths (e.g., `/pool-maintenance.html` stays the same via the `_redirects` file or direct route matching).
-
-## Execution Order (batched)
-1. **Round 1**: Layout components (TopBar, Nav, MobileMenu, Footer, FloatingPhone, FinalCTA, Layout) + Homepage
-2. **Round 2**: Core service pages (pool-maintenance, pool-openings, pool-closings, pool-repair, pool-chemistry, salt-water-pool-service)
-3. **Round 3**: Hot tub + Installation pages (hot-tub-services, hot-tub-repair, liner, pumps, filter, heater-installation, safety-covers)
-4. **Round 4**: Repair + Leak Detection pages (pool-pump-repair, heater-repair, filter-repair, liner-repair, skimmer-repair, leak-detection, residential-leak-detection, trenchless-pipe-repair)
-5. **Round 5**: About, Contact, Locations, Blog index, 404
-6. **Round 6-8**: Location pages (21 town pages) + Blog posts (12 posts)
+## Key Content Notes
+- **Pool Maintenance**: Has video hero (like homepage), 2 pricing packages (Basic/Deluxe), before/after images, 4 "every visit" cards, 6 FAQs
+- **Pool Openings**: Has video hero, 3 pricing packages, content blocks, 6 FAQs
+- **Pool Closings**: Uses `page-hero` (no video), 3 packages with images, 6 FAQs
+- **Pool Repair**: Uses `page-hero`, 3 content blocks (crack/tile/pipe), 4 warning sign cards, CTA band, 6 FAQs
+- **Pool Chemistry**: Uses `page-hero`, content block, 6 chemistry parameter cards, 6 FAQs
+- **Saltwater**: Uses `page-hero`, content blocks, 6 service cards, CTA band, 5 FAQs, contact form
+- **Above-Ground**: Uses `page-hero`, content blocks, gallery, 5 process cards, CTA band, 6 FAQs, contact form, service area links
 
 ## Technical Details
-- Install `react-helmet-async` for SEO head management
-- GTM script added once in `index.html` (the Vite entry point), not repeated per page
-- All routes added to `App.tsx` with `.html` extension matching for SEO continuity
-- Structured data (JSON-LD) injected per page via Helmet
-- Nav dropdown interactivity converted from vanilla JS to React state
-
-Shall I proceed with Round 1 (shared layout components + homepage)?
+- `dangerouslySetInnerHTML` not needed; all content is directly converted to JSX
+- Inline styles from HTML preserved as React `style={{}}` objects
+- `&amp;` becomes `&`, HTML entities converted to JSX equivalents
+- `onclick="toggleFaq(this)"` replaced with React `onClick` + `useState`
 
