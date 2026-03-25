@@ -1,24 +1,29 @@
 
 
-# Fix: Delete Static HTML Files to Enable React Routing
+# SEO Hardening: Netlify Prerendering + Meta Tag Cleanup
 
-## What and Why
-The 63 static `.html` files in the project root are blocking React Router. Vite serves them directly instead of letting the React app handle the routes. Deleting them lets React take over — pages work in Lovable preview and on Netlify via your existing `_redirects` file.
+## What This Does
+Enables Netlify's built-in prerendering so search engine bots (Google, Bing, etc.) receive fully-rendered static HTML snapshots instead of a blank React shell. This gives you the SEO benefits of static HTML while keeping the React SPA for real users.
 
-## What Gets Deleted
-All `.html` files in the project root **except**:
-- `index.html` (Vite SPA entry point)
-- `404.html` (Netlify fallback)
+## Changes
 
-That's 63 files including all service pages, town pages, blog posts, and standalone pages.
+### 1. Create `netlify.toml`
+Add prerendering configuration:
+- Enable Netlify's bot-aware prerendering (serves static HTML to crawlers)
+- Set proper SPA redirect rules as a backup to `_redirects`
+- Add security headers (X-Frame-Options, etc.)
 
-## What Stays
-- All React components in `src/pages/` (your editable pages)
-- `_redirects` (already configured for Netlify)
-- `sitemap.xml`, `robots.txt`, `styles.css`
-- All images/media assets
-- All config files
+### 2. Update `src/components/SEOHead.tsx`
+- Add a `noIndex` optional prop (defaults to `false`)
+- When `true`, sets `<meta name="robots" content="noindex, nofollow">`
+- This replaces the hardcoded `index, follow` on pages like Thank You
 
-## No Other Changes
-React components, routing in `App.tsx`, and `_redirects` are already correctly set up. This is purely cleanup.
+### 3. Update `src/pages/ThankYou.tsx`
+- Pass `noIndex={true}` to SEOHead (thank-you page should not be indexed — already blocked in robots.txt but belt-and-suspenders)
+
+## Why This Is the Best Option
+- Zero framework migration needed (no Astro/Next.js)
+- Googlebot sees fully-rendered HTML with all meta tags, JSON-LD, and content
+- Real users still get the fast React SPA experience
+- Works immediately on Netlify deploy with no build changes
 
