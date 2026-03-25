@@ -1,55 +1,46 @@
 
 
-# Round 2: Convert Core Service Pages to React
+# Round 3: Convert Hot Tub + Installation Pages to React
 
-## Pages to Create (7 total)
-1. `src/pages/PoolMaintenance.tsx` — pool-maintenance.html
-2. `src/pages/PoolOpenings.tsx` — pool-openings.html
-3. `src/pages/PoolClosings.tsx` — pool-closings.html
-4. `src/pages/PoolRepair.tsx` — pool-repair.html
-5. `src/pages/PoolChemistry.tsx` — pool-chemistry.html
-6. `src/pages/SaltWaterPoolService.tsx` — salt-water-pool-service.html
-7. `src/pages/AboveGroundPoolInstallation.tsx` — above-ground-pool-installation.html
+## What Gets Built
+7 new React page components + 7 new routes in App.tsx.
 
-## Shared Components to Extract
-Two patterns repeat across all pages and should be extracted into reusable components:
+## Files to Create
 
-- **`src/components/ServiceAreaLinks.tsx`** — The "We provide this service across the North Shore" section with 7 town link pills (Peabody, Danvers, Middleton, Beverly, Salem, Saugus, Lynnfield). Identical on every page.
+| File | Source | Key Sections |
+|------|--------|-------------|
+| `src/pages/HotTubServices.tsx` | hot-tub-services.html | Video hero (hot-tub-video.mp4), content block w/ image, 6 service cards, CTA band linking to hot-tub-repair, 6 FAQs, ServiceAreaLinks |
+| `src/pages/HotTubRepair.tsx` | hot-tub-repair.html | page-hero, content block w/ image, 6 "common repairs" cards, CTA band linking to hot-tub-services, 6 FAQs (w/ internal Link), ServiceAreaLinks |
+| `src/pages/LinerInstallation.tsx` | liner.html | page-hero, content block w/ image, 4 process cards, before/after comparison (2-col), 9-image gallery (3-col), 5 FAQs, ServiceAreaLinks |
+| `src/pages/PumpInstallation.tsx` | pumps.html | page-hero, 4 pump type packages in 2x2 grid (one "Recommended" featured), 5 FAQs, ServiceAreaLinks |
+| `src/pages/FilterInstallation.tsx` | filter.html | page-hero, 3 filter packages (one "Most Popular" featured), 4 warning sign cards, 5 FAQs, ServiceAreaLinks |
+| `src/pages/HeaterInstallation.tsx` | heater-installation.html | page-hero, text-only content block, 3 heater type cards, text-only content block, CTA band, 4 FAQs, ServiceAreaLinks |
+| `src/pages/SafetyCovers.tsx` | safety-covers.html | page-hero, content block w/ image + internal links, 2 cover type cards (mesh/solid w/ internal links), 4 process cards, reversed content block (direction:rtl/ltr), CTA band, 5 FAQs, ContactForm, ServiceAreaLinks |
 
-- **`src/components/ContactForm.tsx`** — The contact form + info sidebar (appears on saltwater and above-ground pages, and will repeat on future pages). Netlify form with name, phone, email, service, town, message fields.
+## File to Modify
 
-## Per-Page Structure
-Each page follows the same pattern established in Round 1:
-- Wrapped in `<Layout>` component (provides topbar, nav, mobile menu, footer, floating CTA)
-- `<SEOHead>` with title, description, canonical URL, and JSON-LD schemas (LocalBusiness, Service, FAQPage, BreadcrumbList)
-- Unique body content converted from HTML to JSX (sections between nav and footer)
-- FAQ sections use React state for accordion toggle (same pattern as Index.tsx)
-- All internal links use `<Link to="...">` from react-router-dom
-
-## Route Registration
-Add all 7 routes to `App.tsx`:
+**`src/App.tsx`** -- Add 7 imports and routes:
 ```
-/pool-maintenance.html
-/pool-openings.html
-/pool-closings.html
-/pool-repair.html
-/pool-chemistry.html
-/salt-water-pool-service.html
-/above-ground-pool-installation.html
+/hot-tub-services.html     → HotTubServices
+/hot-tub-repair.html       → HotTubRepair
+/liner.html                → LinerInstallation
+/pumps.html                → PumpInstallation
+/filter.html               → FilterInstallation
+/heater-installation.html  → HeaterInstallation
+/safety-covers.html        → SafetyCovers
 ```
 
-## Key Content Notes
-- **Pool Maintenance**: Has video hero (like homepage), 2 pricing packages (Basic/Deluxe), before/after images, 4 "every visit" cards, 6 FAQs
-- **Pool Openings**: Has video hero, 3 pricing packages, content blocks, 6 FAQs
-- **Pool Closings**: Uses `page-hero` (no video), 3 packages with images, 6 FAQs
-- **Pool Repair**: Uses `page-hero`, 3 content blocks (crack/tile/pipe), 4 warning sign cards, CTA band, 6 FAQs
-- **Pool Chemistry**: Uses `page-hero`, content block, 6 chemistry parameter cards, 6 FAQs
-- **Saltwater**: Uses `page-hero`, content blocks, 6 service cards, CTA band, 5 FAQs, contact form
-- **Above-Ground**: Uses `page-hero`, content blocks, gallery, 5 process cards, CTA band, 6 FAQs, contact form, service area links
+## Implementation Pattern
+Same as Rounds 1-2 (established in PoolRepair.tsx, etc.):
+- Wrap in `<Layout>`, use `<SEOHead>` with JSON-LD schemas from each HTML `<head>`
+- FAQ accordion via `useState` + `toggleFaq` pattern
+- Internal links via `<Link to="...">`
+- Reuse `<ServiceAreaLinks>` and `<ContactForm>` components
+- All unique body content (between nav and footer) converted to JSX
+- Inline styles preserved as `style={{}}` objects
 
-## Technical Details
-- `dangerouslySetInnerHTML` not needed; all content is directly converted to JSX
-- Inline styles from HTML preserved as React `style={{}}` objects
-- `&amp;` becomes `&`, HTML entities converted to JSX equivalents
-- `onclick="toggleFaq(this)"` replaced with React `onClick` + `useState`
+## Notable Page-Specific Details
+- **HotTubServices**: Uses `hero-video` class with `hot-tub-video.mp4` and `hot-tub-poster.jpg` (same pattern as homepage video hero)
+- **PumpInstallation**: `packages__grid` with `grid-template-columns: repeat(2, 1fr)` override and `max-width:860px`
+- **SafetyCovers**: Reversed content block uses `style={{direction:'rtl'}}` on outer div with `style={{direction:'ltr'}}` on children; includes `<ContactForm>` component
 
