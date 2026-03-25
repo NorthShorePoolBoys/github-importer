@@ -13,6 +13,13 @@ import PoolRepair from "./pages/PoolRepair.tsx";
 import PoolChemistry from "./pages/PoolChemistry.tsx";
 import SaltWaterPoolService from "./pages/SaltWaterPoolService.tsx";
 import AboveGroundPoolInstallation from "./pages/AboveGroundPoolInstallation.tsx";
+import HotTubServices from "./pages/HotTubServices.tsx";
+import HotTubRepair from "./pages/HotTubRepair.tsx";
+import LinerInstallation from "./pages/LinerInstallation.tsx";
+import PumpInstallation from "./pages/PumpInstallation.tsx";
+import FilterInstallation from "./pages/FilterInstallation.tsx";
+import HeaterInstallation from "./pages/HeaterInstallation.tsx";
+import SafetyCovers from "./pages/SafetyCovers.tsx";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +39,13 @@ const App = () => (
             <Route path="/pool-chemistry.html" element={<PoolChemistry />} />
             <Route path="/salt-water-pool-service.html" element={<SaltWaterPoolService />} />
             <Route path="/above-ground-pool-installation.html" element={<AboveGroundPoolInstallation />} />
+            <Route path="/hot-tub-services.html" element={<HotTubServices />} />
+            <Route path="/hot-tub-repair.html" element={<HotTubRepair />} />
+            <Route path="/liner.html" element={<LinerInstallation />} />
+            <Route path="/pumps.html" element={<PumpInstallation />} />
+            <Route path="/filter.html" element={<FilterInstallation />} />
+            <Route path="/heater-installation.html" element={<HeaterInstallation />} />
+            <Route path="/safety-covers.html" element={<SafetyCovers />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
