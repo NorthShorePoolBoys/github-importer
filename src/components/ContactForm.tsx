@@ -22,7 +22,7 @@ const ContactForm = () => (
         <div className="contact__form-box">
           <h3>Send us a message</h3>
           <p>We'll get back to you within 48 hours.</p>
-          <form name="quote-request" method="POST" data-netlify="true" action="/thank-you.html">
+          <form name="quote-request" method="POST" data-netlify="true" action="/thank-you">
             <input type="hidden" name="form-name" value="quote-request" />
             <p style={{ display: "none" }}><label>Don't fill this out: <input name="bot-field" /></label></p>
             <div className="fg-row">

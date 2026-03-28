@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 const towns = [
-  { label: "Peabody", href: "/pool-service-peabody-ma.html" },
-  { label: "Danvers", href: "/pool-service-danvers-ma.html" },
-  { label: "Middleton", href: "/pool-service-middleton-ma.html" },
-  { label: "Beverly", href: "/pool-service-beverly-ma.html" },
-  { label: "Salem", href: "/pool-service-salem-ma.html" },
-  { label: "Saugus", href: "/pool-service-saugus-ma.html" },
-  { label: "Lynnfield", href: "/pool-service-lynnfield-ma.html" },
+  { label: "Peabody", href: "/pool-service-peabody-ma" },
+  { label: "Danvers", href: "/pool-service-danvers-ma" },
+  { label: "Middleton", href: "/pool-service-middleton-ma" },
+  { label: "Beverly", href: "/pool-service-beverly-ma" },
+  { label: "Salem", href: "/pool-service-salem-ma" },
+  { label: "Saugus", href: "/pool-service-saugus-ma" },
+  { label: "Lynnfield", href: "/pool-service-lynnfield-ma" },
 ];
 
 const ServiceAreaLinks = () => (

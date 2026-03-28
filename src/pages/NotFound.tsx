@@ -36,11 +36,11 @@ const NotFound = () => {
           <h3 style={{ fontFamily: 'var(--serif)', fontSize: 22, fontWeight: 400, color: 'var(--charcoal)', marginBottom: 24 }}>Here's where you probably wanted to go:</h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10, marginBottom: 32 }}>
             <Link to="/" className="btn btn--teal">Homepage</Link>
-            <Link to="/pool-maintenance.html" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Maintenance</Link>
-            <Link to="/pool-openings.html" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Pool Openings</Link>
-            <Link to="/pool-repair.html" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Repair</Link>
-            <Link to="/contact.html" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Contact Us</Link>
-            <Link to="/locations.html" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Locations</Link>
+            <Link to="/pool-maintenance" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Maintenance</Link>
+            <Link to="/pool-openings" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Pool Openings</Link>
+            <Link to="/pool-repair" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Repair</Link>
+            <Link to="/contact" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Contact Us</Link>
+            <Link to="/locations" className="btn btn--outline" style={{ borderColor: 'var(--fog)', color: 'var(--teal)' }}>Locations</Link>
           </div>
           <p style={{ color: 'var(--stone)', fontSize: 14 }}>Or call us: <a href="tel:9788825932" style={{ color: 'var(--teal)', fontWeight: 600 }}>(978) 882-5932</a></p>
         </div>

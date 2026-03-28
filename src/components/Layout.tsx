@@ -48,7 +48,7 @@ const Layout = ({ children, hideFinalCTA, finalCTATitle, finalCTADescription }: 
                 </div>
               </li>
             ))}
-            <li className="nav__item"><Link to="/about.html">About</Link></li>
+            <li className="nav__item"><Link to="/about">About</Link></li>
             <li className="nav__item">
               <button type="button">Locations <ChevronSvg /></button>
               <div className="nav__dropdown">
@@ -59,12 +59,12 @@ const Layout = ({ children, hideFinalCTA, finalCTATitle, finalCTADescription }: 
                 ))}
               </div>
             </li>
-            <li className="nav__item"><Link to="/contact.html">Contact Us</Link></li>
-            <li className="nav__item"><Link to="/blog.html">Blog</Link></li>
+            <li className="nav__item"><Link to="/contact">Contact Us</Link></li>
+            <li className="nav__item"><Link to="/blog">Blog</Link></li>
           </ul>
           <div className="nav__right">
             <a href="tel:9788825932" className="nav__phone">(978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--teal">Contact Us</Link>
+            <Link to="/contact" className="btn btn--teal">Contact Us</Link>
           </div>
           <button className="hamburger" aria-label="Menu" onClick={() => setMobileMenuOpen(true)}>
             <span></span><span></span><span></span>

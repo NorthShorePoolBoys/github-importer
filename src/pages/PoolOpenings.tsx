@@ -13,7 +13,7 @@ const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity
 const breadcrumbSchema = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.northshorepoolboys.com/"},{"@type":"ListItem","position":2,"name":"Pool"},{"@type":"ListItem","position":3,"name":"Openings","item":"https://www.northshorepoolboys.com/pool-openings.html"}]};
 
 const faqs = [
-  { q: "When should I open my pool?", a: <p>On the North Shore, most pool owners open between late April and mid-May. We recommend opening before temperatures consistently hit 70°F to prevent algae growth under the cover. Read our complete guide on <Link to="/blog-when-to-open-pool-massachusetts.html" style={{ color: "var(--teal)", fontWeight: 600 }}>when to open your pool in Massachusetts</Link>.</p> },
+  { q: "When should I open my pool?", a: <p>On the North Shore, most pool owners open between late April and mid-May. We recommend opening before temperatures consistently hit 70°F to prevent algae growth under the cover. Read our complete guide on <Link to="/blog-when-to-open-pool-massachusetts" style={{ color: "var(--teal)", fontWeight: 600 }}>when to open your pool in Massachusetts</Link>.</p> },
   { q: "Which package should I choose?", a: <p>If your pool was properly closed and you handle chemicals yourself, Basic works great. Half Service is our most popular — it covers everything plus initial shock treatment. Full Service is ideal if you want a swim-ready pool with zero effort.</p> },
   { q: "How long does a pool opening take?", a: <p>Most openings take 1–2 hours depending on pool size, condition, and package. Full Service with heavy debris can take up to 3 hours.</p> },
   { q: "Do you open above-ground and in-ground pools?", a: <p>Yes — we open both above-ground and in-ground pools of all sizes. Pricing varies based on pool type and equipment.</p> },
@@ -51,7 +51,7 @@ const PoolOpenings = () => {
             <h1>Start your season right with a professional pool opening</h1>
             <p className="hero-video__sub">A proper opening avoids weeks of headaches. We handle cover removal, system startup, chemical balancing, and cleaning — so your pool is swim-ready from day one.</p>
             <div className="hero-video__ctas">
-              <Link to="/contact.html" className="btn btn--teal btn--xl">Book Your Opening</Link>
+              <Link to="/contact" className="btn btn--teal btn--xl">Book Your Opening</Link>
               <a href="tel:9788825932" className="btn btn--glass btn--xl">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.21.34 2 .57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 (978) 882-5932
@@ -105,7 +105,7 @@ const PoolOpenings = () => {
                 <li className="pkg__excluded">Chemicals not included</li>
                 <li className="pkg__excluded">Cover removal not included</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Basic</Link>
+              <Link to="/contact" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Basic</Link>
             </div>
             <div className="pkg pkg--featured">
               <div className="pkg__badge">Most Popular</div>
@@ -119,7 +119,7 @@ const PoolOpenings = () => {
                 <li>Full system start-up</li>
                 <li>Algaecide &amp; 5 gal shock included</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--teal btn--lg btn--full">Book Half Service</Link>
+              <Link to="/contact" className="btn btn--teal btn--lg btn--full">Book Half Service</Link>
             </div>
             <div className="pkg">
               <div className="pkg__name">Full Service</div>
@@ -133,7 +133,7 @@ const PoolOpenings = () => {
                 <li>Full chemical balance</li>
                 <li>Full vacuum of pool</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Full Service</Link>
+              <Link to="/contact" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Full Service</Link>
             </div>
           </div>
           <p className="pkg__note">Prices vary based on pool type, size, number of pumps, filters, chemical feeders, heaters, and spa equipment.<br />For an accurate quote, call us at <a href="tel:9788825932" style={{ color: "var(--teal)", fontWeight: 600 }}>(978) 882-5932</a></p>

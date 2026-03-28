@@ -110,7 +110,7 @@ const Index = () => {
             <h1>Pool Service in Peabody, MA<br />& the North Shore</h1>
             <p className="hero-video__sub">The highest-rated pool service in Southern New England — two years running. Weekly maintenance, openings, closings, repairs, and hot tub service for 16+ towns across the North Shore.</p>
             <div className="hero-video__ctas">
-              <Link to="/contact.html" className="btn btn--teal btn--xl">
+              <Link to="/contact" className="btn btn--teal btn--xl">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 Get a Free Quote
               </Link>
@@ -195,7 +195,7 @@ const Index = () => {
             ))}
           </div>
           <p style={{ textAlign: "center", marginTop: 16 }}>
-            <Link to="/locations.html" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>View all 16 service areas →</Link>
+            <Link to="/locations" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>View all 16 service areas →</Link>
           </p>
         </div>
       </section>
@@ -248,7 +248,7 @@ const Index = () => {
             </div>
           </div>
           <p style={{ marginTop: 28 }}>
-            <Link to="/blog-best-pool-service-southern-new-england-2026.html" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>Read about our 2026 award →</Link>
+            <Link to="/blog-best-pool-service-southern-new-england-2026" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>Read about our 2026 award →</Link>
           </p>
         </div>
       </section>
@@ -294,7 +294,7 @@ const Index = () => {
             ))}
           </div>
           <p style={{ marginTop: 24 }}>
-            <Link to="/blog.html" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>Read more pool care tips →</Link>
+            <Link to="/blog" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>Read more pool care tips →</Link>
           </p>
         </div>
       </section>

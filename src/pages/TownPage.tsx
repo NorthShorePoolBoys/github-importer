@@ -41,7 +41,7 @@ const TownPage = ({ slug }: TownPageProps) => {
   const town = townData[slug];
   const [openFaq, setOpenFaq] = useState(0);
 
-  if (!town) return <Navigate to="/locations.html" replace />;
+  if (!town) return <Navigate to="/locations" replace />;
 
   const toggleFaq = (i: number) => setOpenFaq(openFaq === i ? -1 : i);
 
@@ -89,7 +89,7 @@ const TownPage = ({ slug }: TownPageProps) => {
           <p>{town.heroSubtitle}</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -165,7 +165,7 @@ const TownPage = ({ slug }: TownPageProps) => {
               </Link>
             ))}
           </div>
-          <p style={{ marginTop: 16 }}><Link to="/blog.html" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>View all pool care tips →</Link></p>
+          <p style={{ marginTop: 16 }}><Link to="/blog" style={{ fontSize: 14, fontWeight: 600, color: "var(--teal)" }}>View all pool care tips →</Link></p>
         </div>
       </section>
 
@@ -178,7 +178,7 @@ const TownPage = ({ slug }: TownPageProps) => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>
@@ -220,7 +220,7 @@ const TownPage = ({ slug }: TownPageProps) => {
               </Link>
             ))}
           </div>
-          <p style={{ marginTop: 16 }}><Link to="/locations.html" style={{ color: "var(--teal)", fontWeight: 600, fontSize: 14 }}>View all service locations →</Link></p>
+          <p style={{ marginTop: 16 }}><Link to="/locations" style={{ color: "var(--teal)", fontWeight: 600, fontSize: 14 }}>View all service locations →</Link></p>
         </div>
       </section>
 

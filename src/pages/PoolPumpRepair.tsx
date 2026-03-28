@@ -11,7 +11,7 @@ const breadcrumbSchema = {"@context":"https://schema.org","@type":"BreadcrumbLis
 
 const faqs = [
   { q: "How much does a pool pump repair cost?", a: <p>Our standard pump service call is $150. That covers diagnosis plus common repairs like impeller cleaning, gasket replacement, and shaft seal repair. If additional parts are needed, we quote you before doing the work.</p> },
-  { q: "Should I repair or replace my pool pump?", a: <p>If the motor is under 8 years old and the issue is a gasket, seal, or impeller — repair. If the motor is older with multiple problems, upgrading to a <Link to="/pumps.html" style={{ color: "var(--teal)" }}>variable speed pump</Link> usually saves more in the long run.</p> },
+  { q: "Should I repair or replace my pool pump?", a: <p>If the motor is under 8 years old and the issue is a gasket, seal, or impeller — repair. If the motor is older with multiple problems, upgrading to a <Link to="/pumps" style={{ color: "var(--teal)" }}>variable speed pump</Link> usually saves more in the long run.</p> },
   { q: "How do I know if my pump needs repair?", a: <p>Loud noises, loss of prime, reduced flow, leaking from the pump body, air bubbles in the return jets, or the motor tripping the breaker. Any of these warrant a service call.</p> },
   { q: "How long does a pump repair take?", a: <p>Most pump repairs take 1–2 hours on-site. If we need to order a specific part, we'll schedule a follow-up as soon as it arrives.</p> },
   { q: "Do you repair above-ground pool pumps?", a: <p>Yes — we repair pumps for both above-ground and in-ground pools across the entire North Shore.</p> },
@@ -35,10 +35,10 @@ const PoolPumpRepair = () => {
         <div className="wrap">
           <div className="slabel">Pump Repair · Peabody &amp; North Shore</div>
           <h1>Pool pump repair — diagnosed honestly, fixed properly</h1>
-          <p>Strange noises, leaking, lost prime, weak flow? We'll figure out exactly what's wrong and fix it — or tell you honestly if <Link to="/pumps.html" style={{ color: "var(--teal)", fontWeight: 600 }}>pump replacement</Link> makes more sense. $150 service call covers diagnosis and common repairs.</p>
+          <p>Strange noises, leaking, lost prime, weak flow? We'll figure out exactly what's wrong and fix it — or tell you honestly if <Link to="/pumps" style={{ color: "var(--teal)", fontWeight: 600 }}>pump replacement</Link> makes more sense. $150 service call covers diagnosis and common repairs.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Schedule Pump Repair</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Schedule Pump Repair</Link>
           </div>
         </div>
       </section>
@@ -53,8 +53,8 @@ const PoolPumpRepair = () => {
               <div className="slabel">$150 Service Call</div>
               <h2>We diagnose the problem before recommending a fix</h2>
               <p>Too many pool companies jump straight to "you need a new pump" without actually troubleshooting. Our approach is different — we inspect the motor, check the impeller, test seals and gaskets, and verify electrical connections before making any recommendation.</p>
-              <p>Most pump issues are fixable with a gasket, seal, or impeller cleaning — not a full replacement. Our $150 service call covers the diagnosis and most common repairs. If parts are needed, we'll quote you before proceeding. Not sure if your pump needs attention? Check out our guide on <Link to="/blog-signs-pool-pump-needs-repair.html" style={{ color: "var(--teal)", fontWeight: 600 }}>5 signs your pool pump needs repair</Link>.</p>
-              <p>And if replacement really is the better option, we'll explain why and help you choose the right <Link to="/pumps.html" style={{ color: "var(--teal)", fontWeight: 600 }}>pump upgrade</Link> for your pool.</p>
+              <p>Most pump issues are fixable with a gasket, seal, or impeller cleaning — not a full replacement. Our $150 service call covers the diagnosis and most common repairs. If parts are needed, we'll quote you before proceeding. Not sure if your pump needs attention? Check out our guide on <Link to="/blog-signs-pool-pump-needs-repair" style={{ color: "var(--teal)", fontWeight: 600 }}>5 signs your pool pump needs repair</Link>.</p>
+              <p>And if replacement really is the better option, we'll explain why and help you choose the right <Link to="/pumps" style={{ color: "var(--teal)", fontWeight: 600 }}>pump upgrade</Link> for your pool.</p>
             </div>
           </div>
         </div>

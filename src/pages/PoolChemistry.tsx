@@ -16,8 +16,8 @@ const faqs = [
   { q: "What parameters do you test at each visit?", a: <p>pH, alkalinity, phosphates, CYA (cyanuric acid/stabilizer), calcium hardness, and the Langelier Saturation Index. For commercial and high-end pools, we also monitor ORP.</p> },
   { q: "What testing equipment do you use?", a: <p>Professional Taylor test kits for reagent-based testing and photometer analysis for precise digital readings. We don't use test strips — they're not accurate enough for proper balancing.</p> },
   { q: "What is the Langelier Saturation Index?", a: <p>LSI is a calculation that factors pH, alkalinity, calcium, temperature, and TDS to determine if your water is corrosive (damaging equipment) or scale-forming (clogging pipes). We target a balanced LSI at every visit.</p> },
-  { q: "My pool keeps turning green — can you fix it?", a: <p>Yes. Persistent algae usually means an underlying chemistry imbalance — often high phosphates or inadequate sanitizer levels. We diagnose the root cause and correct it, not just dump shock and hope for the best. See our step-by-step guide on <Link to="/blog-green-pool-water-fix.html" style={{ color: "var(--teal)", fontWeight: 600 }}>how to fix green pool water</Link>.</p> },
-  { q: "Is chemistry included in weekly maintenance?", a: <p>Full chemical testing and balancing is included in our <Link to="/pool-maintenance.html" style={{ color: "var(--teal)" }}>Deluxe maintenance plan</Link> ($130+/week). It's also available as a standalone service call.</p> },
+  { q: "My pool keeps turning green — can you fix it?", a: <p>Yes. Persistent algae usually means an underlying chemistry imbalance — often high phosphates or inadequate sanitizer levels. We diagnose the root cause and correct it, not just dump shock and hope for the best. See our step-by-step guide on <Link to="/blog-green-pool-water-fix" style={{ color: "var(--teal)", fontWeight: 600 }}>how to fix green pool water</Link>.</p> },
+  { q: "Is chemistry included in weekly maintenance?", a: <p>Full chemical testing and balancing is included in our <Link to="/pool-maintenance" style={{ color: "var(--teal)" }}>Deluxe maintenance plan</Link> ($130+/week). It's also available as a standalone service call.</p> },
   { q: "Do you service pools in Peabody, Danvers, and Beverly?", a: <p>Yes — we serve Peabody, Danvers, Middleton, Beverly, Salem, Saugus, Lynnfield, and surrounding Essex County communities.</p> },
 ];
 
@@ -50,7 +50,7 @@ const PoolChemistry = () => {
           <p>We use Taylor test kits and photometer testing to balance your water to the Langelier Saturation Index — the gold standard. No test strips, no eyeballing. Just science-backed chemistry that protects your pool and your swimmers.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Schedule a Water Test</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Schedule a Water Test</Link>
           </div>
         </div>
       </section>

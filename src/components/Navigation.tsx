@@ -9,75 +9,75 @@ const navItems = [
   {
     label: "Pool",
     children: [
-      { label: "Maintenance", href: "/pool-maintenance.html" },
-      { label: "Openings", href: "/pool-openings.html" },
-      { label: "Closings", href: "/pool-closings.html" },
-      { label: "Repair", href: "/pool-repair.html" },
-      { label: "Chemistry", href: "/pool-chemistry.html" },
-      { label: "Saltwater", href: "/salt-water-pool-service.html" },
-      { label: "Above-Ground Builds", href: "/above-ground-pool-installation.html" },
+      { label: "Maintenance", href: "/pool-maintenance" },
+      { label: "Openings", href: "/pool-openings" },
+      { label: "Closings", href: "/pool-closings" },
+      { label: "Repair", href: "/pool-repair" },
+      { label: "Chemistry", href: "/pool-chemistry" },
+      { label: "Saltwater", href: "/salt-water-pool-service" },
+      { label: "Above-Ground Builds", href: "/above-ground-pool-installation" },
     ],
   },
   {
     label: "Hot Tub",
     children: [
-      { label: "Maintenance", href: "/hot-tub-services.html" },
-      { label: "Repair", href: "/hot-tub-repair.html" },
+      { label: "Maintenance", href: "/hot-tub-services" },
+      { label: "Repair", href: "/hot-tub-repair" },
     ],
   },
   {
     label: "Installation",
     children: [
-      { label: "Liners", href: "/liner.html" },
-      { label: "Pumps", href: "/pumps.html" },
-      { label: "Filters", href: "/filter.html" },
-      { label: "Heaters", href: "/heater-installation.html" },
-      { label: "Safety Covers", href: "/safety-covers.html" },
+      { label: "Liners", href: "/liner" },
+      { label: "Pumps", href: "/pumps" },
+      { label: "Filters", href: "/filter" },
+      { label: "Heaters", href: "/heater-installation" },
+      { label: "Safety Covers", href: "/safety-covers" },
     ],
   },
   {
     label: "Repair",
     children: [
-      { label: "Pump", href: "/pool-pump-repair.html" },
-      { label: "Heater", href: "/heater-repair.html" },
-      { label: "Filter", href: "/filter-repair.html" },
-      { label: "Liner", href: "/liner-repair.html" },
-      { label: "Skimmer", href: "/skimmer-repair.html" },
+      { label: "Pump", href: "/pool-pump-repair" },
+      { label: "Heater", href: "/heater-repair" },
+      { label: "Filter", href: "/filter-repair" },
+      { label: "Liner", href: "/liner-repair" },
+      { label: "Skimmer", href: "/skimmer-repair" },
     ],
   },
   {
     label: "Leak Detection",
     children: [
-      { label: "Pool Leak Detection", href: "/leak-detection.html" },
-      { label: "Residential Leak Detection", href: "/residential-leak-detection.html" },
-      { label: "Trenchless Pipe Repair", href: "/trenchless-pipe-repair.html" },
+      { label: "Pool Leak Detection", href: "/leak-detection" },
+      { label: "Residential Leak Detection", href: "/residential-leak-detection" },
+      { label: "Trenchless Pipe Repair", href: "/trenchless-pipe-repair" },
     ],
   },
 ];
 
 const locationItems = [
-  { label: "All 21 Locations", href: "/locations.html", bold: true },
-  { label: "Peabody", href: "/pool-service-peabody-ma.html" },
-  { label: "Danvers", href: "/pool-service-danvers-ma.html" },
-  { label: "Middleton", href: "/pool-service-middleton-ma.html" },
-  { label: "Beverly", href: "/pool-service-beverly-ma.html" },
-  { label: "Salem", href: "/pool-service-salem-ma.html" },
-  { label: "Saugus", href: "/pool-service-saugus-ma.html" },
-  { label: "Lynnfield", href: "/pool-service-lynnfield-ma.html" },
-  { label: "Marblehead", href: "/pool-service-marblehead-ma.html" },
-  { label: "Swampscott", href: "/pool-service-swampscott-ma.html" },
-  { label: "Lynn", href: "/pool-service-lynn-ma.html" },
-  { label: "Wakefield", href: "/pool-service-wakefield-ma.html" },
-  { label: "Reading", href: "/pool-service-reading-ma.html" },
-  { label: "North Reading", href: "/pool-service-north-reading-ma.html" },
-  { label: "Topsfield", href: "/pool-service-topsfield-ma.html" },
-  { label: "Wenham", href: "/pool-service-wenham-ma.html" },
-  { label: "Hamilton", href: "/pool-service-hamilton-ma.html" },
-  { label: "Nahant", href: "/pool-service-nahant-ma.html" },
-  { label: "Georgetown", href: "/pool-service-georgetown-ma.html" },
-  { label: "Boxford", href: "/pool-service-boxford-ma.html" },
-  { label: "Essex", href: "/pool-service-essex-ma.html" },
-  { label: "Ipswich", href: "/pool-service-ipswich-ma.html" },
+  { label: "All 21 Locations", href: "/locations", bold: true },
+  { label: "Peabody", href: "/pool-service-peabody-ma" },
+  { label: "Danvers", href: "/pool-service-danvers-ma" },
+  { label: "Middleton", href: "/pool-service-middleton-ma" },
+  { label: "Beverly", href: "/pool-service-beverly-ma" },
+  { label: "Salem", href: "/pool-service-salem-ma" },
+  { label: "Saugus", href: "/pool-service-saugus-ma" },
+  { label: "Lynnfield", href: "/pool-service-lynnfield-ma" },
+  { label: "Marblehead", href: "/pool-service-marblehead-ma" },
+  { label: "Swampscott", href: "/pool-service-swampscott-ma" },
+  { label: "Lynn", href: "/pool-service-lynn-ma" },
+  { label: "Wakefield", href: "/pool-service-wakefield-ma" },
+  { label: "Reading", href: "/pool-service-reading-ma" },
+  { label: "North Reading", href: "/pool-service-north-reading-ma" },
+  { label: "Topsfield", href: "/pool-service-topsfield-ma" },
+  { label: "Wenham", href: "/pool-service-wenham-ma" },
+  { label: "Hamilton", href: "/pool-service-hamilton-ma" },
+  { label: "Nahant", href: "/pool-service-nahant-ma" },
+  { label: "Georgetown", href: "/pool-service-georgetown-ma" },
+  { label: "Boxford", href: "/pool-service-boxford-ma" },
+  { label: "Essex", href: "/pool-service-essex-ma" },
+  { label: "Ipswich", href: "/pool-service-ipswich-ma" },
 ];
 
 const Navigation = () => {
@@ -109,7 +109,7 @@ const Navigation = () => {
             </li>
           ))}
 
-          <li className="nav__item"><Link to="/about.html">About</Link></li>
+          <li className="nav__item"><Link to="/about">About</Link></li>
 
           <li className="nav__item">
             <button type="button">Locations <ChevronSvg /></button>
@@ -122,13 +122,13 @@ const Navigation = () => {
             </div>
           </li>
 
-          <li className="nav__item"><Link to="/contact.html">Contact Us</Link></li>
-          <li className="nav__item"><Link to="/blog.html">Blog</Link></li>
+          <li className="nav__item"><Link to="/contact">Contact Us</Link></li>
+          <li className="nav__item"><Link to="/blog">Blog</Link></li>
         </ul>
 
         <div className="nav__right">
           <a href="tel:9788825932" className="nav__phone">(978) 882-5932</a>
-          <Link to="/contact.html" className="btn btn--teal">Contact Us</Link>
+          <Link to="/contact" className="btn btn--teal">Contact Us</Link>
         </div>
       </div>
     </nav>

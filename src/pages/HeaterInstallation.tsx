@@ -42,7 +42,7 @@ const HeaterInstallation = () => {
           <p>A properly sized and installed heater lets you open earlier, close later, and swim comfortably from April through October. We install gas, electric, and heat pump systems for pools and hot tubs across the North Shore.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -90,7 +90,7 @@ const HeaterInstallation = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

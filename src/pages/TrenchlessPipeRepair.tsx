@@ -20,7 +20,7 @@ const faqs = [
   { q: "How much does trenchless pipe repair cost?", a: <p>Cost varies based on pipe length, depth, and accessibility. Trenchless repair typically costs less than traditional excavation when you factor in landscape restoration, deck repair, and time. Call for a free assessment and quote.</p> },
   { q: "How long does it take?", a: <p>Most trenchless repairs are completed in one day. Traditional excavation can take 3-5 days of work plus weeks of landscape and hardscape recovery.</p> },
   { q: "Is trenchless repair as durable as traditional pipe replacement?", a: <p>Yes — in many cases more durable. Pipe relining creates a seamless, jointless pipe inside the existing one. There are no joints to separate, and the smooth interior actually improves water flow compared to older pipes with rough or corroded interiors.</p> },
-  { q: "Do you need to know where the leak is first?", a: <p>Yes — we always start with a <Link to="/leak-detection.html" style={{ color: "var(--teal)" }}>leak detection</Link> pressure test to identify the exact pipe and location before recommending any repair method. This prevents unnecessary work and ensures we fix the right problem.</p> },
+  { q: "Do you need to know where the leak is first?", a: <p>Yes — we always start with a <Link to="/leak-detection" style={{ color: "var(--teal)" }}>leak detection</Link> pressure test to identify the exact pipe and location before recommending any repair method. This prevents unnecessary work and ensures we fix the right problem.</p> },
 ];
 
 const TrenchlessPipeRepair = () => {
@@ -43,7 +43,7 @@ const TrenchlessPipeRepair = () => {
           <p>Traditional pipe repair means jackhammering your pool deck, digging up your lawn, and weeks of restoration. Trenchless repair fixes the same problem from two small access points — no excavation, no mess, no damage to your landscaping.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Assessment</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Assessment</Link>
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ const TrenchlessPipeRepair = () => {
             <div className="content-block__text">
               <div className="slabel">How It Works</div>
               <h2>The trenchless repair process</h2>
-              <p>First, we use our <Link to="/leak-detection.html" style={{ color: "var(--teal)", fontWeight: 600 }}>leak detection service</Link> to identify exactly where the pipe has failed — using pressure testing and camera inspection when needed. Once we know the location and extent of the damage, we determine the best trenchless approach.</p>
+              <p>First, we use our <Link to="/leak-detection" style={{ color: "var(--teal)", fontWeight: 600 }}>leak detection service</Link> to identify exactly where the pipe has failed — using pressure testing and camera inspection when needed. Once we know the location and extent of the damage, we determine the best trenchless approach.</p>
               <p>For most pool pipe repairs, we use pipe relining — inserting a flexible, resin-coated liner into the existing pipe and curing it in place. The result is essentially a new pipe inside the old one, with a smooth interior that actually improves flow compared to the original.</p>
               <p>For pipes that are too damaged or collapsed for relining, we use pipe bursting — pulling a new pipe through the old one while simultaneously breaking the old pipe outward. This replaces the pipe completely without digging.</p>
             </div>
@@ -91,7 +91,7 @@ const TrenchlessPipeRepair = () => {
               <div className="slabel">Common Applications</div>
               <h2>When trenchless repair makes sense</h2>
               <p>Trenchless pipe repair is ideal for leaking return lines, broken skimmer pipes, damaged main drain connections, and any underground plumbing that runs under concrete, pavers, decking, or established landscaping. It's especially valuable when the alternative involves destroying expensive hardscaping or mature gardens to reach the pipe.</p>
-              <p>We serve homeowners across <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-marblehead-ma.html" style={{ color: "var(--teal)" }}>Marblehead</Link>, and all 16 towns across the North Shore. If you suspect a pipe leak — rising water bills, wet spots in the yard, air bubbles in the returns — call us for a pressure test before any digging happens.</p>
+              <p>We serve homeowners across <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-marblehead-ma" style={{ color: "var(--teal)" }}>Marblehead</Link>, and all 16 towns across the North Shore. If you suspect a pipe leak — rising water bills, wet spots in the yard, air bubbles in the returns — call us for a pressure test before any digging happens.</p>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ const TrenchlessPipeRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Assessment</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Assessment</Link>
           </div>
         </div>
       </section>

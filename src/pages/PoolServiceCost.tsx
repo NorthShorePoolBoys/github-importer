@@ -45,7 +45,7 @@ const PoolServiceCost = () => {
           <p>Transparent pricing from a CPO-certified team. No hidden fees, no surprise charges. Here's what pool service actually costs on the North Shore.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -60,7 +60,7 @@ const PoolServiceCost = () => {
               <div className="slabel">Honest Pricing</div>
               <h2>What determines pool service cost?</h2>
               <p>Pool service pricing depends on several factors: your pool size, how often you want service, the condition of your water and equipment, and what's included in each visit. A 15,000-gallon pool with balanced chemistry costs less to maintain than a 30,000-gallon pool that hasn't been touched in months.</p>
-              <p>We don't believe in one-size-fits-all pricing or burying the real cost in fine print. Below are our actual ranges for the North Shore area — <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)" }}>Salem</Link>, and surrounding towns.</p>
+              <p>We don't believe in one-size-fits-all pricing or burying the real cost in fine print. Below are our actual ranges for the North Shore area — <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)" }}>Salem</Link>, and surrounding towns.</p>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const PoolServiceCost = () => {
               <h2>Cheap pool service costs you more in the long run</h2>
               <p>The lowest-priced pool company often cuts corners — skipping chemical tests, rushing visits, and missing equipment problems until they become expensive repairs. We've taken over dozens of accounts from bargain services where the pool was green, the equipment was failing, and the homeowner ended up paying more to fix the neglect than they saved.</p>
               <p>Our pricing reflects CPO-certified technicians, professional-grade Taylor test kits and photometer testing, thorough visits (30–60 minutes, not 10), and honest communication about what your pool actually needs.</p>
-              <p>We serve <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and <Link to="/locations.html" style={{ color: "var(--teal)", fontWeight: 600 }}>21 towns across the North Shore</Link>.</p>
+              <p>We serve <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and <Link to="/locations" style={{ color: "var(--teal)", fontWeight: 600 }}>21 towns across the North Shore</Link>.</p>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ const PoolServiceCost = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>

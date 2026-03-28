@@ -40,10 +40,10 @@ const LinerRepair = () => {
         <div className="wrap">
           <div className="slabel">Repair · Pool Liners</div>
           <h1>Pool liner repair — patch leaks and extend the life of your liner</h1>
-          <p>A small tear or pinhole doesn't always mean you need a <Link to="/liner.html" style={{ color: "var(--teal)", fontWeight: 600 }}>full liner replacement</Link>. We repair above-ground and in-ground vinyl liners with professional underwater patches, seam fixes, and bead repairs that hold for years.</p>
+          <p>A small tear or pinhole doesn't always mean you need a <Link to="/liner" style={{ color: "var(--teal)", fontWeight: 600 }}>full liner replacement</Link>. We repair above-ground and in-ground vinyl liners with professional underwater patches, seam fixes, and bead repairs that hold for years.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -75,7 +75,7 @@ const LinerRepair = () => {
               <div className="slabel">Repair vs Replace</div>
               <h2>When to repair — and when to replace</h2>
               <p><strong>Repair makes sense when:</strong> The liner is under 10 years old, the damage is localized (one or two tears), the vinyl is still pliable and not brittle, and the overall liner is in good shape.</p>
-              <p><strong>Replacement is better when:</strong> The liner is 12+ years old, multiple areas are failing, the vinyl is faded/brittle and cracking, or there's significant stretching and wrinkling. In those cases, a <Link to="/liner.html" style={{ color: "var(--teal)", fontWeight: 600 }}>full liner replacement</Link> is the smarter investment.</p>
+              <p><strong>Replacement is better when:</strong> The liner is 12+ years old, multiple areas are failing, the vinyl is faded/brittle and cracking, or there's significant stretching and wrinkling. In those cases, a <Link to="/liner" style={{ color: "var(--teal)", fontWeight: 600 }}>full liner replacement</Link> is the smarter investment.</p>
               <p>We'll always be straight with you about which option makes more sense. If a $75 patch will hold for 3+ years, we'll tell you. If the liner is on its last legs and patching is throwing money away, we'll tell you that too.</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ const LinerRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

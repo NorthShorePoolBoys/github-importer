@@ -27,7 +27,7 @@ const faqs = [
   { q: "How often should a salt cell be cleaned?", a: <p>Every 3–6 months depending on usage and water chemistry. Scale buildup on the cell plates reduces chlorine production and shortens cell life. We check the cell at every service visit.</p> },
   { q: "Can you convert my chlorine pool to saltwater?", a: <p>Yes. A salt chlorine generator can be added to most existing pools. We assess your equipment compatibility, handle the full installation, and dial in the initial chemistry.</p> },
   { q: "How long do salt cells last?", a: <p>Typically 3–7 years depending on the brand, water chemistry, and how well the cell is maintained. Regular cleaning extends cell life significantly.</p> },
-  { q: "Is saltwater bad for pool equipment?", a: <p>Salt can accelerate corrosion on certain metals, natural stone coping, and some heater components. We assess your equipment during consultation and advise on any compatibility concerns. Read our full breakdown of <Link to="/blog-is-saltwater-pool-worth-it.html" style={{ color: "var(--teal)" }}>saltwater pool pros and cons</Link>.</p> },
+  { q: "Is saltwater bad for pool equipment?", a: <p>Salt can accelerate corrosion on certain metals, natural stone coping, and some heater components. We assess your equipment during consultation and advise on any compatibility concerns. Read our full breakdown of <Link to="/blog-is-saltwater-pool-worth-it" style={{ color: "var(--teal)" }}>saltwater pool pros and cons</Link>.</p> },
 ];
 
 const SaltWaterPoolService = () => {
@@ -50,7 +50,7 @@ const SaltWaterPoolService = () => {
           <p>Salt chlorine generators need different care than traditional chlorine pools. Our CPO-certified technicians service both — with the chemistry knowledge to keep your salt system running efficiently and your water feeling silky smooth.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Request a Quote</Link>
           </div>
         </div>
       </section>
@@ -65,8 +65,8 @@ const SaltWaterPoolService = () => {
               <div className="slabel">Salt System Expertise</div>
               <h2>Why saltwater pools need specialized service</h2>
               <p>Saltwater pools produce their own chlorine through electrolysis, but they're not maintenance-free. The salt cell needs regular inspection and cleaning, pH drifts high and requires consistent correction, and the salt concentration must stay in a precise range for the generator to work properly.</p>
-              <p>Many pool companies treat salt pools the same as chlorine pools. We don't. Our CPO-certified team understands the unique chemistry of salt systems — including how salt interacts with your <Link to="/heater-installation.html" style={{ color: "var(--teal)", fontWeight: 600 }}>heater</Link>, <Link to="/filter.html" style={{ color: "var(--teal)", fontWeight: 600 }}>filter</Link>, and other equipment over time.</p>
-              <p>Interested in switching? Read our honest breakdown of <Link to="/blog-is-saltwater-pool-worth-it.html" style={{ color: "var(--teal)", fontWeight: 600 }}>whether a saltwater pool is worth it</Link>.</p>
+              <p>Many pool companies treat salt pools the same as chlorine pools. We don't. Our CPO-certified team understands the unique chemistry of salt systems — including how salt interacts with your <Link to="/heater-installation" style={{ color: "var(--teal)", fontWeight: 600 }}>heater</Link>, <Link to="/filter" style={{ color: "var(--teal)", fontWeight: 600 }}>filter</Link>, and other equipment over time.</p>
+              <p>Interested in switching? Read our honest breakdown of <Link to="/blog-is-saltwater-pool-worth-it" style={{ color: "var(--teal)", fontWeight: 600 }}>whether a saltwater pool is worth it</Link>.</p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ const SaltWaterPoolService = () => {
               <h2>Thinking about switching to saltwater?</h2>
               <p>We install salt chlorine generators on existing pools — both above-ground and in-ground. The process includes assessing your current equipment for salt compatibility, installing the generator and cell, adding the initial salt charge, and dialing in your chemistry.</p>
               <p>We'll also give you an honest assessment of whether salt is the right move for your specific pool setup. Some equipment combinations work great with salt; others lead to accelerated corrosion. We'll tell you straight.</p>
-              <p>Serving <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations.html" style={{ color: "var(--teal)", fontWeight: 600 }}>See all locations →</Link></p>
+              <p>Serving <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations" style={{ color: "var(--teal)", fontWeight: 600 }}>See all locations →</Link></p>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ const SaltWaterPoolService = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>

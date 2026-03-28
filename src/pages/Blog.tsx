@@ -72,7 +72,7 @@ const Blog = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

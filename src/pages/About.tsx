@@ -25,7 +25,7 @@ const About = () => {
           <p>CPO-certified, fully insured, and based right here in Peabody. We're not a franchise — we're your neighbors who happen to know pools inside and out.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Contact Us</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Contact Us</Link>
           </div>
         </div>
       </section>
@@ -82,8 +82,8 @@ const About = () => {
             <div className="content-block__text" style={{ direction: 'ltr' }}>
               <div className="slabel">Full-Service Pool Care</div>
               <h2>Everything your pool needs, under one roof</h2>
-              <p>From <Link to="/pool-maintenance.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>weekly maintenance</Link> and <Link to="/pool-chemistry.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>water chemistry</Link> to <Link to="/pool-openings.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>seasonal openings</Link>, <Link to="/pool-closings.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>closings</Link>, <Link to="/pool-repair.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>repairs</Link>, and <Link to="/liner.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>installations</Link> — we handle it all.</p>
-              <p>We also service <Link to="/hot-tub-services.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>hot tubs</Link>, install <Link to="/pumps.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>pumps</Link> and <Link to="/filter.html" style={{ color: 'var(--teal)', fontWeight: 600 }}>filters</Link>, and build above-ground pools. Whatever your pool needs, one call handles it.</p>
+              <p>From <Link to="/pool-maintenance" style={{ color: 'var(--teal)', fontWeight: 600 }}>weekly maintenance</Link> and <Link to="/pool-chemistry" style={{ color: 'var(--teal)', fontWeight: 600 }}>water chemistry</Link> to <Link to="/pool-openings" style={{ color: 'var(--teal)', fontWeight: 600 }}>seasonal openings</Link>, <Link to="/pool-closings" style={{ color: 'var(--teal)', fontWeight: 600 }}>closings</Link>, <Link to="/pool-repair" style={{ color: 'var(--teal)', fontWeight: 600 }}>repairs</Link>, and <Link to="/liner" style={{ color: 'var(--teal)', fontWeight: 600 }}>installations</Link> — we handle it all.</p>
+              <p>We also service <Link to="/hot-tub-services" style={{ color: 'var(--teal)', fontWeight: 600 }}>hot tubs</Link>, install <Link to="/pumps" style={{ color: 'var(--teal)', fontWeight: 600 }}>pumps</Link> and <Link to="/filter" style={{ color: 'var(--teal)', fontWeight: 600 }}>filters</Link>, and build above-ground pools. Whatever your pool needs, one call handles it.</p>
               <p>Our goal is simple: make pool ownership easy so you can focus on enjoying it.</p>
             </div>
           </div>
@@ -99,7 +99,7 @@ const About = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Contact Us</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}>Contact Us</Link>
           </div>
         </div>
       </section>
@@ -135,7 +135,7 @@ const About = () => {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <Link to="/blog-best-pool-service-southern-new-england-2026.html" style={{ fontSize: 14, fontWeight: 600, color: 'var(--teal)' }}>Read about what this award means to us →</Link>
+            <Link to="/blog-best-pool-service-southern-new-england-2026" style={{ fontSize: 14, fontWeight: 600, color: 'var(--teal)' }}>Read about what this award means to us →</Link>
           </div>
         </div>
       </section>

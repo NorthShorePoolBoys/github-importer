@@ -41,7 +41,7 @@ const PoolRepair = () => {
           <p>Cracks, leaks, broken tiles, busted pipes. We diagnose the issue honestly and fix it properly — no upselling, no unnecessary work. Just straightforward pool repair from a CPO-certified team.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Request a Repair Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Request a Repair Quote</Link>
           </div>
         </div>
       </section>
@@ -64,7 +64,7 @@ const PoolRepair = () => {
               <div className="slabel">Structural</div>
               <h2>Crack repair</h2>
               <p>Cracks in your pool shell aren't just cosmetic — they signal potential structural problems. As the ground around your pool settles and shifts, walls and foundations can crack, leading to water leakage that undermines the surrounding soil.</p>
-              <p>Left unaddressed, a small crack becomes a big problem: water loss, eroded soil, and damage to your pool deck and surrounding property. The longer you wait, the more expensive the fix. If you're losing water but can't see where, our <Link to="/leak-detection.html" style={{ color: "var(--teal)", fontWeight: 600 }}>professional leak detection service</Link> pinpoints the source before any digging begins.</p>
+              <p>Left unaddressed, a small crack becomes a big problem: water loss, eroded soil, and damage to your pool deck and surrounding property. The longer you wait, the more expensive the fix. If you're losing water but can't see where, our <Link to="/leak-detection" style={{ color: "var(--teal)", fontWeight: 600 }}>professional leak detection service</Link> pinpoints the source before any digging begins.</p>
               <p>We assess every crack to determine whether it's surface-level or structural, then repair it properly to prevent further damage.</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ const PoolRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>

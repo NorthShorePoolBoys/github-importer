@@ -45,7 +45,7 @@ const HeaterRepair = () => {
           <p>Heater not firing? Not reaching temperature? Making strange noises? We troubleshoot all brands and types — gas, electric, and heat pump — and fix the actual problem, not just the symptom.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -76,9 +76,9 @@ const HeaterRepair = () => {
             <div className="content-block__text">
               <div className="slabel">Our Approach</div>
               <h2>Honest diagnostics, fair pricing</h2>
-              <p>We never recommend replacing a heater that can be repaired. Our CPO-certified technicians diagnose the specific failure, explain what's wrong in plain language, and give you a clear price before starting any work. If replacement is the smarter long-term investment, we handle <Link to="/heater-installation.html" style={{ color: "var(--teal)", fontWeight: 600 }}>pool heater installation</Link> too.</p>
+              <p>We never recommend replacing a heater that can be repaired. Our CPO-certified technicians diagnose the specific failure, explain what's wrong in plain language, and give you a clear price before starting any work. If replacement is the smarter long-term investment, we handle <Link to="/heater-installation" style={{ color: "var(--teal)", fontWeight: 600 }}>pool heater installation</Link> too.</p>
               <p>If a repair costs more than 50% of a replacement, we'll tell you — and apply your diagnostic fee toward the new installation. We service all major brands including Hayward, Pentair, Raypak, Jandy, Rheem, and AquaCal.</p>
-              <p>Serving <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)" }}>Salem</Link>, and the entire North Shore.</p>
+              <p>Serving <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)" }}>Salem</Link>, and the entire North Shore.</p>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const HeaterRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

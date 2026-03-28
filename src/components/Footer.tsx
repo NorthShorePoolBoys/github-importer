@@ -12,40 +12,40 @@ const Footer = () => (
         <div>
           <h4>Pool Services</h4>
           <ul>
-            <li><Link to="/pool-maintenance.html">Weekly Maintenance</Link></li>
-            <li><Link to="/pool-openings.html">Pool Openings</Link></li>
-            <li><Link to="/pool-closings.html">Pool Closings</Link></li>
-            <li><Link to="/pool-repair.html">Pool Repair</Link></li>
-            <li><Link to="/pool-chemistry.html">Water Chemistry</Link></li>
-            <li><Link to="/pool-pump-repair.html">Pump Repair</Link></li>
+            <li><Link to="/pool-maintenance">Weekly Maintenance</Link></li>
+            <li><Link to="/pool-openings">Pool Openings</Link></li>
+            <li><Link to="/pool-closings">Pool Closings</Link></li>
+            <li><Link to="/pool-repair">Pool Repair</Link></li>
+            <li><Link to="/pool-chemistry">Water Chemistry</Link></li>
+            <li><Link to="/pool-pump-repair">Pump Repair</Link></li>
           </ul>
         </div>
         <div>
           <h4>More Services</h4>
           <ul>
-            <li><Link to="/hot-tub-services.html">Hot Tub Service</Link></li>
-            <li><Link to="/hot-tub-repair.html">Hot Tub Repair</Link></li>
-            <li><Link to="/liner.html">Liner Installation</Link></li>
-            <li><Link to="/pumps.html">Pump Installation</Link></li>
-            <li><Link to="/filter.html">Filter Installation</Link></li>
-            <li><Link to="/above-ground-pool-installation.html">Above-Ground Builds</Link></li>
-            <li><Link to="/salt-water-pool-service.html">Saltwater Service</Link></li>
+            <li><Link to="/hot-tub-services">Hot Tub Service</Link></li>
+            <li><Link to="/hot-tub-repair">Hot Tub Repair</Link></li>
+            <li><Link to="/liner">Liner Installation</Link></li>
+            <li><Link to="/pumps">Pump Installation</Link></li>
+            <li><Link to="/filter">Filter Installation</Link></li>
+            <li><Link to="/above-ground-pool-installation">Above-Ground Builds</Link></li>
+            <li><Link to="/salt-water-pool-service">Saltwater Service</Link></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul>
-            <li><Link to="/about.html">About Us</Link></li>
-            <li><Link to="/locations.html">Service Areas</Link></li>
-            <li><Link to="/contact.html">Contact Us</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/locations">Service Areas</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
           <h4 style={{ marginTop: 20 }}>Areas We Serve</h4>
           <ul>
-            <li><Link to="/pool-service-peabody-ma.html">Peabody</Link> · <Link to="/pool-service-danvers-ma.html">Danvers</Link></li>
-            <li><Link to="/pool-service-beverly-ma.html">Beverly</Link> · <Link to="/pool-service-salem-ma.html">Salem</Link></li>
-            <li><Link to="/pool-service-saugus-ma.html">Saugus</Link> · <Link to="/pool-service-lynnfield-ma.html">Lynnfield</Link></li>
-            <li><Link to="/pool-service-middleton-ma.html">Middleton</Link> · <Link to="/pool-service-marblehead-ma.html">Marblehead</Link></li>
-            <li><Link to="/locations.html" style={{ fontWeight: 600 }}>+ 13 more towns →</Link></li>
+            <li><Link to="/pool-service-peabody-ma">Peabody</Link> · <Link to="/pool-service-danvers-ma">Danvers</Link></li>
+            <li><Link to="/pool-service-beverly-ma">Beverly</Link> · <Link to="/pool-service-salem-ma">Salem</Link></li>
+            <li><Link to="/pool-service-saugus-ma">Saugus</Link> · <Link to="/pool-service-lynnfield-ma">Lynnfield</Link></li>
+            <li><Link to="/pool-service-middleton-ma">Middleton</Link> · <Link to="/pool-service-marblehead-ma">Marblehead</Link></li>
+            <li><Link to="/locations" style={{ fontWeight: 600 }}>+ 13 more towns →</Link></li>
           </ul>
         </div>
       </div>

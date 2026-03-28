@@ -36,7 +36,7 @@ const FilterRepair = () => {
           <p>A failing filter means cloudy water, poor circulation, and strain on your pump. We diagnose and repair sand, cartridge, and DE filters — fixing the actual problem, not just the symptoms.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -61,11 +61,11 @@ const FilterRepair = () => {
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "24px 20px" }}>
               <h3 style={{ fontSize: 15, fontWeight: 600, color: "var(--charcoal)", marginBottom: 6 }}>Poor water clarity despite chemicals</h3>
-              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>If your <Link to="/pool-chemistry.html" style={{ color: "var(--teal)" }}>water chemistry</Link> is balanced but the water is still hazy, the filter isn't doing its job. Could be channeling in sand, worn cartridge elements, or torn DE grids.</p>
+              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>If your <Link to="/pool-chemistry" style={{ color: "var(--teal)" }}>water chemistry</Link> is balanced but the water is still hazy, the filter isn't doing its job. Could be channeling in sand, worn cartridge elements, or torn DE grids.</p>
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "24px 20px" }}>
               <h3 style={{ fontSize: 15, fontWeight: 600, color: "var(--charcoal)", marginBottom: 6 }}>Leaking filter tank</h3>
-              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>Cracks in the tank body, bad o-rings on the lid or multiport valve, or corroded clamp bands. We determine if it's a simple seal replacement or if the tank needs to be replaced. If a full <Link to="/filter.html" style={{ color: "var(--teal)", fontWeight: 600 }}>filter installation</Link> makes more sense, we'll size the right system for your pool.</p>
+              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>Cracks in the tank body, bad o-rings on the lid or multiport valve, or corroded clamp bands. We determine if it's a simple seal replacement or if the tank needs to be replaced. If a full <Link to="/filter" style={{ color: "var(--teal)", fontWeight: 600 }}>filter installation</Link> makes more sense, we'll size the right system for your pool.</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const FilterRepair = () => {
               <p><strong>Sand filters:</strong> Lateral replacement, sand changes (every 5-7 years), multiport valve rebuilds, and standpipe repairs. We use #20 silica sand or glass media depending on your preference.</p>
               <p><strong>Cartridge filters:</strong> Element replacement, manifold repair, tank crack assessment, and proper sizing verification. We carry elements for Hayward, Pentair, Jandy, and Sta-Rite.</p>
               <p><strong>DE filters (diatomaceous earth):</strong> Grid replacement, manifold rebuilds, standpipe repair, and proper DE recharging. We also clean and inspect the entire assembly during service.</p>
-              <p>Not sure which filter type you have? No problem — we'll identify it on-site and explain your options in plain language. If a <Link to="/filter.html" style={{ color: "var(--teal)", fontWeight: 600 }}>new filter installation</Link> makes more sense than repair, we'll tell you honestly.</p>
+              <p>Not sure which filter type you have? No problem — we'll identify it on-site and explain your options in plain language. If a <Link to="/filter" style={{ color: "var(--teal)", fontWeight: 600 }}>new filter installation</Link> makes more sense than repair, we'll tell you honestly.</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const FilterRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>
