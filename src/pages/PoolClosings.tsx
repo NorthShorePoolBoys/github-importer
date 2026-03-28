@@ -41,7 +41,7 @@ const PoolClosings = () => {
           <p>A proper pool winterization prevents burst pipes, cracked shells, and thousands in spring repairs. We blow out every line, treat the water, and button everything up with a secure winter pool cover — so you open to a clean pool next season, not a disaster.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Book Your Closing</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Book Your Closing</Link>
           </div>
         </div>
       </section>
@@ -55,7 +55,7 @@ const PoolClosings = () => {
             <div className="content-block__text">
               <div className="slabel">Why It Matters</div>
               <h2>Why skipping a professional pool closing is a costly mistake</h2>
-              <p>New England winters don't forgive shortcuts. Water left in your pipes freezes, expands, and bursts underground lines — a repair that can easily cost thousands of dollars to dig up and replace. Read our complete <Link to="/blog-pool-closing-checklist-massachusetts.html" style={{ color: "var(--teal)", fontWeight: 600 }}>pool closing checklist for Massachusetts</Link> to see every step involved.</p>
+              <p>New England winters don't forgive shortcuts. Water left in your pipes freezes, expands, and bursts underground lines — a repair that can easily cost thousands of dollars to dig up and replace. Read our complete <Link to="/blog-pool-closing-checklist-massachusetts" style={{ color: "var(--teal)", fontWeight: 600 }}>pool closing checklist for Massachusetts</Link> to see every step involved.</p>
               <p>A professional closing ensures every drop of water is blown out of your plumbing, equipment is drained and protected, and your water is chemically treated to prevent algae and staining over the winter months.</p>
               <p>Our customers who close properly with us every fall consistently have smoother, cheaper openings in the spring. It's the single best investment you can make in your pool's longevity.</p>
             </div>
@@ -85,7 +85,7 @@ const PoolClosings = () => {
                 <li className="pkg__excluded">Chemicals not included</li>
                 <li className="pkg__excluded">Cover install not included</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Basic</Link>
+              <Link to="/contact" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Basic</Link>
             </div>
             <div className="pkg pkg--featured">
               <div className="pkg__badge">Most Popular</div>
@@ -103,7 +103,7 @@ const PoolClosings = () => {
                 <li>3 gallons of antifreeze</li>
                 <li>Winterizing shock &amp; algaecide</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--teal btn--lg btn--full">Book Half Service</Link>
+              <Link to="/contact" className="btn btn--teal btn--lg btn--full">Book Half Service</Link>
             </div>
             <div className="pkg">
               <img src="https://images.squarespace-cdn.com/content/v1/64f055a1c97ab02d785bfafe/9e355974-3c36-49f0-8e1e-c959e9fca841/IMG_9263.jpeg" alt="Full service pool closing winterization" style={{ width: "100%", height: 180, objectFit: "cover", borderRadius: 8, marginBottom: 16 }} loading="lazy" />
@@ -117,7 +117,7 @@ const PoolClosings = () => {
                 <li>Full equipment winterization</li>
                 <li>Heater &amp; salt system prep</li>
               </ul>
-              <Link to="/contact.html" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Full Service</Link>
+              <Link to="/contact" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Book Full Service</Link>
             </div>
           </div>
           <p className="pkg__note">Prices vary based on pool type, size, and equipment. For an accurate quote call <a href="tel:9788825932" style={{ color: "var(--teal)", fontWeight: 600 }}>(978) 882-5932</a></p>

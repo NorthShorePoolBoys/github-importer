@@ -51,7 +51,7 @@ const PoolMaintenance = () => {
             <h1>Weekly Pool Maintenance<br />You Can Actually Count On</h1>
             <p className="hero-video__sub">No missed visits, no mystery chemicals, no guessing games. Just a CPO-certified technician keeping your pool clean, balanced, and swim-ready — every single week. Serving Peabody &amp; 21 North Shore towns.</p>
             <div className="hero-video__ctas">
-              <Link to="/contact.html" className="btn btn--teal btn--xl">
+              <Link to="/contact" className="btn btn--teal btn--xl">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 Get a Maintenance Quote
               </Link>
@@ -81,7 +81,7 @@ const PoolMaintenance = () => {
               <div className="slabel">What We Do</div>
               <h2>Routine care that keeps your pool crystal clear</h2>
               <p>Owning a pool should be about enjoying it — not spending your weekends testing chemicals and scrubbing walls. Our residential pool cleaning service takes that off your plate completely.</p>
-              <p>Every visit includes a thorough vacuum, skimmer emptying, waterline skimming, filter inspection, and (with our Deluxe plan) a full chemical balance. We catch small problems before they become expensive repairs. Want to know exactly what a proper visit should include? Check out our <Link to="/blog-pool-maintenance-checklist.html" style={{ color: "var(--teal)", fontWeight: 600 }}>complete weekly pool maintenance checklist</Link>.</p>
+              <p>Every visit includes a thorough vacuum, skimmer emptying, waterline skimming, filter inspection, and (with our Deluxe plan) a full chemical balance. We catch small problems before they become expensive repairs. Want to know exactly what a proper visit should include? Check out our <Link to="/blog-pool-maintenance-checklist" style={{ color: "var(--teal)", fontWeight: 600 }}>complete weekly pool maintenance checklist</Link>.</p>
               <p>Choose weekly, bi-weekly, or monthly service depending on your pool usage and budget. Most homeowners on the North Shore go with a weekly pool care schedule during peak season to keep chemistry stable and prevent algae.</p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const PoolMaintenance = () => {
               <div style={{ fontSize: 13, color: "var(--stone)", marginBottom: 18, lineHeight: 1.6, borderTop: "1px solid var(--fog)", paddingTop: 14 }}>
                 <strong style={{ color: "var(--charcoal)" }}>Bi-Weekly:</strong> $100+ &nbsp;·&nbsp; <strong style={{ color: "var(--charcoal)" }}>Monthly:</strong> $120+
               </div>
-              <Link to="/contact.html" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Get Basic Quote</Link>
+              <Link to="/contact" className="btn btn--outline btn--lg btn--full" style={{ borderColor: "var(--fog)", color: "var(--teal)" }}>Get Basic Quote</Link>
             </div>
             <div className="pkg pkg--featured">
               <div className="pkg__badge">Recommended</div>
@@ -130,7 +130,7 @@ const PoolMaintenance = () => {
               <div style={{ fontSize: 13, color: "var(--stone)", marginBottom: 18, lineHeight: 1.6, borderTop: "1px solid var(--fog)", paddingTop: 14 }}>
                 <strong style={{ color: "var(--charcoal)" }}>Bi-Weekly:</strong> $150+ &nbsp;·&nbsp; <strong style={{ color: "var(--charcoal)" }}>Monthly:</strong> $190+
               </div>
-              <Link to="/contact.html" className="btn btn--teal btn--lg btn--full">Get Deluxe Quote</Link>
+              <Link to="/contact" className="btn btn--teal btn--lg btn--full">Get Deluxe Quote</Link>
             </div>
           </div>
           <p className="pkg__note">Pricing depends on pool type, size, and equipment. "+" means starting price — we'll give you an exact quote after seeing your setup.<br />Call <a href="tel:9788825932" style={{ color: "var(--teal)", fontWeight: 600 }}>(978) 882-5932</a> or fill out our contact form for a free estimate.</p>

@@ -46,7 +46,7 @@ const LeakDetection = () => {
           <p>Losing water faster than evaporation explains? A pool leak wastes thousands of gallons, damages your yard, and can undermine your pool's structure. We use professional pressure testing and dye testing to pinpoint leaks accurately — no guesswork, no unnecessary digging.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ const LeakDetection = () => {
             <div className="content-block__text">
               <div className="slabel">How We Find Leaks</div>
               <h2>Professional equipment for precise leak detection</h2>
-              <p>Not every leak is visible. Underground pipe leaks, shell cracks, and fitting failures can all cause water loss without obvious signs. We use specialized leak detection equipment and a systematic approach to pinpoint the exact source before any repair work begins. If you're not sure whether you have a leak or just normal evaporation, our guide on <Link to="/blog-how-to-tell-if-pool-has-leak.html" style={{ color: "var(--teal)", fontWeight: 600 }}>how to tell if your pool has a leak</Link> walks you through the bucket test and common warning signs.</p>
+              <p>Not every leak is visible. Underground pipe leaks, shell cracks, and fitting failures can all cause water loss without obvious signs. We use specialized leak detection equipment and a systematic approach to pinpoint the exact source before any repair work begins. If you're not sure whether you have a leak or just normal evaporation, our guide on <Link to="/blog-how-to-tell-if-pool-has-leak" style={{ color: "var(--teal)", fontWeight: 600 }}>how to tell if your pool has a leak</Link> walks you through the bucket test and common warning signs.</p>
             </div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24, marginTop: 40 }}>
@@ -80,7 +80,7 @@ const LeakDetection = () => {
               <h2>Where pools typically leak</h2>
               <p>After years of detecting leaks across the North Shore, we've found the most common sources are underground return and skimmer pipes, especially at joints and elbows where frost movement and ground settling create stress. Light niche fittings, main drain connections, and shell cracks near the tile line are also frequent culprits.</p>
               <p>Above-ground pools most commonly leak at the skimmer gasket, return fitting, or liner seams. We check all of these during our inspection.</p>
-              <p>Once we locate the leak, we'll explain your repair options with clear pricing. Many leaks can be fixed the same day — from pipe patches to fitting replacements to liner repairs. For more extensive underground pipe repairs, our <Link to="/trenchless-pipe-repair.html" style={{ color: "var(--teal)", fontWeight: 600 }}>trenchless pipe repair service</Link> fixes underground leaks without destroying your yard, deck, or landscaping.</p>
+              <p>Once we locate the leak, we'll explain your repair options with clear pricing. Many leaks can be fixed the same day — from pipe patches to fitting replacements to liner repairs. For more extensive underground pipe repairs, our <Link to="/trenchless-pipe-repair" style={{ color: "var(--teal)", fontWeight: 600 }}>trenchless pipe repair service</Link> fixes underground leaks without destroying your yard, deck, or landscaping.</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const LeakDetection = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

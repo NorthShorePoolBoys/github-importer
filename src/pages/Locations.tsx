@@ -33,7 +33,7 @@ const towns = [
 ];
 
 const faqs = [
-  { q: 'What towns do you serve?', a: <>We serve <Link to="/pool-service-peabody-ma.html" style={{ color: 'var(--teal)' }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: 'var(--teal)' }}>Danvers</Link>, <Link to="/pool-service-middleton-ma.html" style={{ color: 'var(--teal)' }}>Middleton</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: 'var(--teal)' }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: 'var(--teal)' }}>Salem</Link>, <Link to="/pool-service-saugus-ma.html" style={{ color: 'var(--teal)' }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma.html" style={{ color: 'var(--teal)' }}>Lynnfield</Link> — plus surrounding Essex County communities.</> },
+  { q: 'What towns do you serve?', a: <>We serve <Link to="/pool-service-peabody-ma" style={{ color: 'var(--teal)' }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: 'var(--teal)' }}>Danvers</Link>, <Link to="/pool-service-middleton-ma" style={{ color: 'var(--teal)' }}>Middleton</Link>, <Link to="/pool-service-beverly-ma" style={{ color: 'var(--teal)' }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: 'var(--teal)' }}>Salem</Link>, <Link to="/pool-service-saugus-ma" style={{ color: 'var(--teal)' }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma" style={{ color: 'var(--teal)' }}>Lynnfield</Link> — plus surrounding Essex County communities.</> },
   { q: 'How far do you travel from Peabody?', a: 'All 7 towns are within a 15-minute drive of our Peabody base. We have regular weekly routes through each town and can usually schedule new service within a week.' },
   { q: 'Do you charge more for towns farther from Peabody?', a: 'No — our pricing is the same across all 7 service towns. Weekly maintenance starts at $80 (Basic) or $130 (Deluxe). Pool openings start at $125.' },
   { q: "What if my town isn't listed?", a: 'Give us a call at (978) 882-5932. We\'re expanding our service area and may be able to accommodate your location.' },
@@ -60,7 +60,7 @@ const Locations = () => {
           <p>We're based in Peabody and serve 21 towns across Essex County. CPO-certified maintenance, openings, closings, repairs, and installations — wherever your pool is on the North Shore.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>

@@ -45,7 +45,7 @@ const SafetyCovers = () => {
           <p>A properly installed safety cover keeps children, pets, and debris out of your pool year-round. We measure precisely, order custom-fit covers, and install with flush-mount anchors that disappear into your deck. Mesh and solid options for every in-ground pool.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Request a Cover Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Request a Cover Quote</Link>
           </div>
         </div>
       </section>
@@ -61,7 +61,7 @@ const SafetyCovers = () => {
               <h2>More than a winter cover — it's year-round protection</h2>
               <p>Standard winter covers keep debris out, but they don't prevent accidents. A safety cover is anchored into your pool deck with spring-loaded hardware and holds up to the ASTM F1346 safety standard — meaning it can support the weight of a child or pet that wanders onto it.</p>
               <p>Safety covers also serve as your winterization cover, so you're getting dual functionality: pool protection through the harsh New England winter and peace of mind every other day of the year. Many homeowners make the switch after their first child or first pet — and wish they'd done it sooner.</p>
-              <p>We install safety covers across <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations.html" style={{ color: "var(--teal)", fontWeight: 600 }}>See all 21 locations →</Link></p>
+              <p>We install safety covers across <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations" style={{ color: "var(--teal)", fontWeight: 600 }}>See all 21 locations →</Link></p>
             </div>
           </div>
         </div>
@@ -78,14 +78,14 @@ const SafetyCovers = () => {
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "32px 28px" }}>
               <div style={{ fontSize: 28, marginBottom: 10 }}>🕸️</div>
               <h3 style={{ fontSize: 18, fontWeight: 600, color: "var(--charcoal)", marginBottom: 10 }}>Mesh Safety Covers</h3>
-              <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7, marginBottom: 12 }}>Mesh covers allow rainwater and snowmelt to drain through the fabric into the pool, so no standing water collects on top. This means no cover pump needed and less maintenance through winter. The tradeoff: fine particles like pollen and silt pass through too, so you'll need a more thorough <Link to="/pool-openings.html" style={{ color: "var(--teal)" }}>pool opening</Link> cleanup in spring.</p>
+              <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7, marginBottom: 12 }}>Mesh covers allow rainwater and snowmelt to drain through the fabric into the pool, so no standing water collects on top. This means no cover pump needed and less maintenance through winter. The tradeoff: fine particles like pollen and silt pass through too, so you'll need a more thorough <Link to="/pool-openings" style={{ color: "var(--teal)" }}>pool opening</Link> cleanup in spring.</p>
               <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7 }}><strong>Best for:</strong> Homeowners who want low winter maintenance and don't mind a bit more cleanup at opening. Lighter weight, easier to handle, and typically lasts 10–15 years.</p>
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "32px 28px" }}>
               <div style={{ fontSize: 28, marginBottom: 10 }}>🛡️</div>
               <h3 style={{ fontSize: 18, fontWeight: 600, color: "var(--charcoal)", marginBottom: 10 }}>Solid Safety Covers</h3>
               <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7, marginBottom: 12 }}>Solid covers block all sunlight, debris, and water from entering the pool. This keeps the water cleaner over winter and prevents algae growth entirely. You'll need a cover pump or built-in drain panel to remove standing water after rain and snowmelt.</p>
-              <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7 }}><strong>Best for:</strong> Homeowners who want the cleanest possible <Link to="/pool-openings.html" style={{ color: "var(--teal)" }}>spring opening</Link> and don't mind managing a cover pump. Heavier, typically lasts 7–11 years.</p>
+              <p style={{ fontSize: 14, color: "var(--stone)", lineHeight: 1.7 }}><strong>Best for:</strong> Homeowners who want the cleanest possible <Link to="/pool-openings" style={{ color: "var(--teal)" }}>spring opening</Link> and don't mind managing a cover pump. Heavier, typically lasts 7–11 years.</p>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@ const SafetyCovers = () => {
               <div className="slabel">Also Available</div>
               <h2>Safety cover replacement &amp; repairs</h2>
               <p>Existing cover worn out, torn, or no longer fitting properly? We replace safety covers on pools that already have anchors installed — often the anchors are still in great shape and just the fabric needs replacing. We also replace broken or missing springs, damaged straps, and worn anchor hardware.</p>
-              <p>If your cover is still in decent condition but just needs a few fixes, we'll assess whether repair or replacement makes more financial sense. Pair your new cover with a <Link to="/pool-closings.html" style={{ color: "var(--teal)", fontWeight: 600 }}>professional pool closing</Link> for a complete winterization package.</p>
+              <p>If your cover is still in decent condition but just needs a few fixes, we'll assess whether repair or replacement makes more financial sense. Pair your new cover with a <Link to="/pool-closings" style={{ color: "var(--teal)", fontWeight: 600 }}>professional pool closing</Link> for a complete winterization package.</p>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ const SafetyCovers = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ const SafetyCovers = () => {
                   {i === 0 ? (
                     <p>Safety covers for in-ground pools typically run $1,200–$3,500 installed depending on pool size, shape, and cover type (mesh vs solid). Custom shapes and larger pools cost more. Call <a href="tel:9788825932" style={{ color: "var(--teal)" }}>(978) 882-5932</a> for a quote specific to your pool.</p>
                   ) : i === 4 ? (
-                    <p>Yes. Safety covers are used for <Link to="/pool-closings.html" style={{ color: "var(--teal)" }}>winterization</Link> and provide ASTM-certified safety year-round. They're a direct upgrade from a standard winter cover.</p>
+                    <p>Yes. Safety covers are used for <Link to="/pool-closings" style={{ color: "var(--teal)" }}>winterization</Link> and provide ASTM-certified safety year-round. They're a direct upgrade from a standard winter cover.</p>
                   ) : (
                     <p>{f.a}</p>
                   )}

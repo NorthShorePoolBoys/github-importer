@@ -50,7 +50,7 @@ const AboveGroundPoolInstallation = () => {
           <p>Ready to add a pool to your backyard? We handle everything — site leveling, pool assembly, liner fitting, equipment hookup, and water fill. CPO-certified installation for round and oval above-ground pools across the North Shore.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Request an Installation Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Request an Installation Quote</Link>
           </div>
         </div>
       </section>
@@ -120,8 +120,8 @@ const AboveGroundPoolInstallation = () => {
               <div className="slabel">Why Choose Us</div>
               <h2>CPO-certified installation by a team that knows above-ground pools</h2>
               <p>We're not a general contractor who installs pools on the side. Pool service is all we do. Our CPO-certified team installs above-ground pools regularly and understands the details that matter — proper wall alignment, correct top rail tension, and liner positioning that prevents premature wear.</p>
-              <p>Every installation includes a full equipment setup so you're not stuck figuring out plumbing connections yourself. And because we also provide <Link to="/pool-maintenance.html" style={{ color: "var(--teal)", fontWeight: 600 }}>weekly pool maintenance</Link>, we can keep your new pool clean and balanced all season long.</p>
-              <p>Serving <Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations.html" style={{ color: "var(--teal)", fontWeight: 600 }}>See all locations →</Link></p>
+              <p>Every installation includes a full equipment setup so you're not stuck figuring out plumbing connections yourself. And because we also provide <Link to="/pool-maintenance" style={{ color: "var(--teal)", fontWeight: 600 }}>weekly pool maintenance</Link>, we can keep your new pool clean and balanced all season long.</p>
+              <p>Serving <Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Danvers</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)", fontWeight: 600 }}>Salem</Link>, and the entire North Shore. <Link to="/locations" style={{ color: "var(--teal)", fontWeight: 600 }}>See all locations →</Link></p>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const AboveGroundPoolInstallation = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Request a Quote</Link>
           </div>
         </div>
       </section>

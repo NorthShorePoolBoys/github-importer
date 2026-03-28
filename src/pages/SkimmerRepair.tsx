@@ -36,7 +36,7 @@ const SkimmerRepair = () => {
           <p>A leaking or damaged skimmer can waste thousands of gallons and damage your pool structure. We repair cracked skimmer bodies, replace gaskets and weir doors, fix pipe connections, and install new skimmers when repair isn't enough.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Free Quote</Link>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ const SkimmerRepair = () => {
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "24px 20px" }}>
               <h3 style={{ fontSize: 15, fontWeight: 600, color: "var(--charcoal)", marginBottom: 6 }}>Leaking at the skimmer gasket</h3>
-              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>The gasket between the skimmer and the pool wall deteriorates over time. This is one of the most common <Link to="/leak-detection.html" style={{ color: "var(--teal)" }}>pool leak</Link> sources — and one of the easiest to fix. We replace the gasket and faceplate.</p>
+              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>The gasket between the skimmer and the pool wall deteriorates over time. This is one of the most common <Link to="/leak-detection" style={{ color: "var(--teal)" }}>pool leak</Link> sources — and one of the easiest to fix. We replace the gasket and faceplate.</p>
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "24px 20px" }}>
               <h3 style={{ fontSize: 15, fontWeight: 600, color: "var(--charcoal)", marginBottom: 6 }}>Broken weir door or basket</h3>
@@ -65,7 +65,7 @@ const SkimmerRepair = () => {
             </div>
             <div style={{ background: "var(--white)", border: "1px solid var(--fog)", borderRadius: 14, padding: "24px 20px" }}>
               <h3 style={{ fontSize: 15, fontWeight: 600, color: "var(--charcoal)", marginBottom: 6 }}>Pipe separation at skimmer</h3>
-              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>Ground settling can pull the underground pipe away from the skimmer body. This causes water loss and air in the pump. We can repair the connection or use <Link to="/trenchless-pipe-repair.html" style={{ color: "var(--teal)" }}>trenchless methods</Link> for buried pipe issues.</p>
+              <p style={{ fontSize: 13.5, color: "var(--stone)", lineHeight: 1.6 }}>Ground settling can pull the underground pipe away from the skimmer body. This causes water loss and air in the pump. We can repair the connection or use <Link to="/trenchless-pipe-repair" style={{ color: "var(--teal)" }}>trenchless methods</Link> for buried pipe issues.</p>
             </div>
           </div>
         </div>
@@ -77,8 +77,8 @@ const SkimmerRepair = () => {
             <div className="content-block__text">
               <div className="slabel">Massachusetts-Specific</div>
               <h2>Why North Shore pools need skimmer attention</h2>
-              <p>Our freeze-thaw cycles are brutal on skimmers. Water that seeps behind the skimmer body freezes in winter, expands, and cracks the plastic. This is why proper <Link to="/pool-closings.html" style={{ color: "var(--teal)" }}>winterization</Link> includes lowering water below the skimmer and installing a Gizzmo freeze plug.</p>
-              <p>If your skimmer wasn't properly winterized — or if it's been 15+ years without inspection — cracks may already be forming. We recommend checking skimmers during every <Link to="/pool-openings.html" style={{ color: "var(--teal)" }}>spring opening</Link> before filling the pool to operating level.</p>
+              <p>Our freeze-thaw cycles are brutal on skimmers. Water that seeps behind the skimmer body freezes in winter, expands, and cracks the plastic. This is why proper <Link to="/pool-closings" style={{ color: "var(--teal)" }}>winterization</Link> includes lowering water below the skimmer and installing a Gizzmo freeze plug.</p>
+              <p>If your skimmer wasn't properly winterized — or if it's been 15+ years without inspection — cracks may already be forming. We recommend checking skimmers during every <Link to="/pool-openings" style={{ color: "var(--teal)" }}>spring opening</Link> before filling the pool to operating level.</p>
               <p>We repair and replace skimmers from Hayward, Pentair, Waterway, and generic brands. For in-ground concrete pools, we also repair the concrete deck around the skimmer when frost heave has caused cracking or separation.</p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const SkimmerRepair = () => {
           </div>
           <div className="cta-band__btns">
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Get a Free Quote</Link>
           </div>
         </div>
       </section>

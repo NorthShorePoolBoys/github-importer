@@ -44,7 +44,7 @@ const FilterInstallation = () => {
           <p>Sand, cartridge, or DE — each filter type has strengths. We help you choose the right one for your pool, size it correctly, and install it so your water stays crystal clear with minimal maintenance.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Filter Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Filter Quote</Link>
           </div>
         </div>
       </section>

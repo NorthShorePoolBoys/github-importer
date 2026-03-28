@@ -37,7 +37,7 @@ const PumpInstallation = () => {
           <p>Your pump is the heart of your pool. Whether you need a replacement for a dying motor or an upgrade to a variable-speed unit that cuts your energy bill, we size it right and install it properly.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Get a Pump Quote</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Get a Pump Quote</Link>
           </div>
         </div>
       </section>

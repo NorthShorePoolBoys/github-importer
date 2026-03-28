@@ -47,7 +47,7 @@ const HotTubRepair = () => {
           <p>Pump not running? Heater won't heat? Jets weak or dead? Error codes on the panel? We troubleshoot every component, find the actual cause, and fix it — not just the symptom.</p>
           <div className="page-hero__btns">
             <a href="tel:9788825932" className="btn btn--teal btn--lg">Call (978) 882-5932</a>
-            <Link to="/contact.html" className="btn btn--outline btn--lg">Schedule Repair</Link>
+            <Link to="/contact" className="btn btn--outline btn--lg">Schedule Repair</Link>
           </div>
         </div>
       </section>
@@ -94,7 +94,7 @@ const HotTubRepair = () => {
             <p>We also offer regular hot tub service visits, drain and fill, and winterization.</p>
           </div>
           <div className="cta-band__btns">
-            <Link to="/hot-tub-services.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Hot Tub Maintenance →</Link>
+            <Link to="/hot-tub-services" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Hot Tub Maintenance →</Link>
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
           </div>
         </div>
@@ -109,9 +109,9 @@ const HotTubRepair = () => {
                 <button className="faq-item__q" onClick={() => toggleFaq(i)}>{f.q}<span className="faq-item__plus"></span></button>
                 <div className="faq-item__a">
                   {i === 4 ? (
-                    <p>Yes — we handle all <Link to="/pool-repair.html" style={{ color: "var(--teal)" }}>pool repairs</Link> including cracks, tile, pipes, and equipment. We also do <Link to="/pool-pump-repair.html" style={{ color: "var(--teal)" }}>pump repair</Link> and <Link to="/pumps.html" style={{ color: "var(--teal)" }}>pump installation</Link>.</p>
+                    <p>Yes — we handle all <Link to="/pool-repair" style={{ color: "var(--teal)" }}>pool repairs</Link> including cracks, tile, pipes, and equipment. We also do <Link to="/pool-pump-repair" style={{ color: "var(--teal)" }}>pump repair</Link> and <Link to="/pumps" style={{ color: "var(--teal)" }}>pump installation</Link>.</p>
                   ) : i === 5 ? (
-                    <p><Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-middleton-ma.html" style={{ color: "var(--teal)" }}>Middleton</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-saugus-ma.html" style={{ color: "var(--teal)" }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma.html" style={{ color: "var(--teal)" }}>Lynnfield</Link>.</p>
+                    <p><Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-middleton-ma" style={{ color: "var(--teal)" }}>Middleton</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-saugus-ma" style={{ color: "var(--teal)" }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma" style={{ color: "var(--teal)" }}>Lynnfield</Link>.</p>
                   ) : (
                     <p>{f.a}</p>
                   )}

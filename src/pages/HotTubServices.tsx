@@ -57,7 +57,7 @@ const HotTubServices = () => {
             <h1>Hot Tub Service That Keeps Your Spa Crystal Clear</h1>
             <p className="hero-video__sub">Professional maintenance, drain &amp; fill, chemical balancing, cleanouts, and winterization for hot tub owners across Peabody, Danvers, Beverly, Salem &amp; the North Shore.</p>
             <div className="hero-video__ctas">
-              <Link to="/contact.html" className="btn btn--teal btn--xl">Schedule Hot Tub Service</Link>
+              <Link to="/contact" className="btn btn--teal btn--xl">Schedule Hot Tub Service</Link>
               <a href="tel:9788825932" className="btn btn--glass btn--xl">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.21.34 2 .57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 (978) 882-5932
@@ -118,7 +118,7 @@ const HotTubServices = () => {
             <p>We also diagnose and fix pump, heater, jet, and electrical issues.</p>
           </div>
           <div className="cta-band__btns">
-            <Link to="/hot-tub-repair.html" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Hot Tub Repair →</Link>
+            <Link to="/hot-tub-repair" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Hot Tub Repair →</Link>
             <a href="tel:9788825932" className="btn btn--outline btn--lg" style={{ borderColor: "rgba(255,255,255,0.35)", color: "#fff" }}>Call (978) 882-5932</a>
           </div>
         </div>
@@ -134,9 +134,9 @@ const HotTubServices = () => {
                 <button className="faq-item__q" onClick={() => toggleFaq(i)}>{f.q}<span className="faq-item__plus"></span></button>
                 <div className="faq-item__a">
                   {i === 4 ? (
-                    <p>Yes — we offer the full range of <Link to="/pool-maintenance.html" style={{ color: "var(--teal)" }}>pool maintenance</Link>, <Link to="/pool-openings.html" style={{ color: "var(--teal)" }}>openings</Link>, <Link to="/pool-closings.html" style={{ color: "var(--teal)" }}>closings</Link>, <Link to="/pool-repair.html" style={{ color: "var(--teal)" }}>repairs</Link>, and <Link to="/pool-chemistry.html" style={{ color: "var(--teal)" }}>chemistry services</Link>. Many customers bundle pool + hot tub service.</p>
+                    <p>Yes — we offer the full range of <Link to="/pool-maintenance" style={{ color: "var(--teal)" }}>pool maintenance</Link>, <Link to="/pool-openings" style={{ color: "var(--teal)" }}>openings</Link>, <Link to="/pool-closings" style={{ color: "var(--teal)" }}>closings</Link>, <Link to="/pool-repair" style={{ color: "var(--teal)" }}>repairs</Link>, and <Link to="/pool-chemistry" style={{ color: "var(--teal)" }}>chemistry services</Link>. Many customers bundle pool + hot tub service.</p>
                   ) : i === 5 ? (
-                    <p><Link to="/pool-service-peabody-ma.html" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma.html" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-middleton-ma.html" style={{ color: "var(--teal)" }}>Middleton</Link>, <Link to="/pool-service-beverly-ma.html" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma.html" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-saugus-ma.html" style={{ color: "var(--teal)" }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma.html" style={{ color: "var(--teal)" }}>Lynnfield</Link>.</p>
+                    <p><Link to="/pool-service-peabody-ma" style={{ color: "var(--teal)" }}>Peabody</Link>, <Link to="/pool-service-danvers-ma" style={{ color: "var(--teal)" }}>Danvers</Link>, <Link to="/pool-service-middleton-ma" style={{ color: "var(--teal)" }}>Middleton</Link>, <Link to="/pool-service-beverly-ma" style={{ color: "var(--teal)" }}>Beverly</Link>, <Link to="/pool-service-salem-ma" style={{ color: "var(--teal)" }}>Salem</Link>, <Link to="/pool-service-saugus-ma" style={{ color: "var(--teal)" }}>Saugus</Link>, and <Link to="/pool-service-lynnfield-ma" style={{ color: "var(--teal)" }}>Lynnfield</Link>.</p>
                   ) : (
                     <p>{f.a}</p>
                   )}
