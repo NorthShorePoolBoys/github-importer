@@ -42,7 +42,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         </div>
       ))}
 
-      <Link to="/about.html" className="mmenu__link" onClick={onClose}>About</Link>
+      <Link to="/about" className="mmenu__link" onClick={onClose}>About</Link>
 
       <div className={`mmenu__item${openSections.includes("Locations") ? " open" : ""}`}>
         <button className="mmenu__toggle" onClick={() => toggle("Locations")}>
@@ -55,12 +55,12 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         </div>
       </div>
 
-      <Link to="/contact.html" className="mmenu__link" onClick={onClose}>Contact Us</Link>
-      <Link to="/blog.html" className="mmenu__link" onClick={onClose}>Blog</Link>
+      <Link to="/contact" className="mmenu__link" onClick={onClose}>Contact Us</Link>
+      <Link to="/blog" className="mmenu__link" onClick={onClose}>Blog</Link>
 
       <div className="mmenu__btns">
         <a href="tel:9788825932" className="btn btn--teal btn--lg btn--full">Call (978) 882-5932</a>
-        <Link to="/contact.html" className="btn btn--ghost btn--lg btn--full" onClick={onClose}>Contact Us</Link>
+        <Link to="/contact" className="btn btn--ghost btn--lg btn--full" onClick={onClose}>Contact Us</Link>
       </div>
     </div>
   );
