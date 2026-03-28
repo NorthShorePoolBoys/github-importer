@@ -1,26 +1,41 @@
 
 
-# Import Pages from GitHub Repo + Fix Navigation
+# Fix: Remove `.html` Extensions from All Internal Links
 
 ## Problem
-When clicking links, pages appear to show the same content (landing page). Two issues:
-1. The page files may have subtle content differences from the GitHub repo versions
-2. There is no scroll-to-top behavior on route changes — React Router keeps the scroll position, making it look like you're still on the same page
+All navigation links throughout the app use `.html` extensions (e.g., `/pool-maintenance.html`). In Lovable's Vite dev server, clicking these causes a full-page reload instead of a smooth React Router client-side navigation — Vite tries to find and serve an actual `.html` file, which doesn't exist. This makes it look like only the landing page works.
 
-## Plan
+The `_redirects` file is a Netlify-only feature and has no effect in Lovable preview. The real fix is to make all internal `<Link>` components use clean URLs (e.g., `/pool-maintenance`), which React Router already handles.
 
-### 1. Replace all page files with GitHub repo versions
-Download and overwrite every file in `src/pages/` and `src/pages/blog/` from the repo at `https://github.com/NorthShorePoolBoys/github-importer`. This covers 30 page files and 15 blog files.
+## Changes (7 files)
 
-### 2. Add scroll-to-top on navigation
-Create a `ScrollToTop` component that calls `window.scrollTo(0, 0)` on every route change, and add it inside `<BrowserRouter>` in `App.tsx`. This is the most common cause of "every page looks the same" in React SPAs — without it, clicking a nav link changes the route but keeps you scrolled to the same position.
+### 1. `src/components/Navigation.tsx`
+Strip `.html` from all `href` values in `navItems` and `locationItems` arrays, and from standalone `<Link to="...">` elements (~84 occurrences).
 
-### 3. Also import any updated components
-Check and replace `src/components/` files from the repo if they differ (Layout, Navigation, Footer, etc.).
+### 2. `src/components/MobileMenu.tsx`
+Strip `.html` from all `<Link to="...">` props.
 
-## Technical Details
-- Total files to write: ~45 (30 pages + 15 blog posts + potential component updates)
-- New file: `src/components/ScrollToTop.tsx`
-- Edit: `src/App.tsx` (add `<ScrollToTop />` inside `<BrowserRouter>`)
-- All existing routes in `App.tsx` remain unchanged
+### 3. `src/components/Layout.tsx`
+Strip `.html` from all `<Link to="...">` props.
+
+### 4. `src/components/Footer.tsx`
+Strip `.html` from all `<Link to="...">` props.
+
+### 5. `src/components/FinalCTA.tsx`
+Strip `.html` from the contact link.
+
+### 6. `src/components/ServiceAreaLinks.tsx`
+Strip `.html` from any links (if present).
+
+### 7. `src/components/ContactForm.tsx`
+Strip `.html` from any thank-you redirect (if present).
+
+## What Stays Unchanged
+- `App.tsx` routes — already support both `/path` and `/path.html`
+- `_redirects` — still needed for Netlify production
+- `netlify.toml` — still needed for prerendering
+- All page content files
+
+## Result
+Navigation works in both Lovable preview (clean URLs via React Router) and Netlify production (`.html` URLs handled by `_redirects` fallback + React Router).
 
